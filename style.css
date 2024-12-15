@@ -11,13 +11,34 @@
   --fonte: var(--fontColor); 
   --vidro: rgba(6, 6, 4, .2);
   --borders: 1px solid var(--fontColor);
-  --borderRadius: 8px;
+  --borderRadius: none;
   --stdBorder: 1px solid var(--fontColor);
   color: var(--fontColor);
-  font-family: 'Fira sans';
+  font-family: 'Fira code';
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1rem;
   background-color: var(--backgroundColor);
+  --gradiente: radial-gradient(
+                      ellipse at 50% 50%, 
+                      #bf398910 0, 
+                      transparent 75%), 
+                    radial-gradient(
+                      ellipse at 50% 50%, 
+                      #bf398910 0, 
+                      transparent 75%); 
+  --dimmedFontColor: #777;
+  --hoverBackground: #282828;
+  --headingsColor: tomato;
+  --darkerBg: #282828;
+  --linkColor: skyblue;
+  --linkColorHover: white;
+  --corTermo: tomato;
+  --selectionColor: #ecc ;
+  --fontSelectionColor: black;
+  --highLightColor: springgreen;
+  --backgroundColor: #282828;
+  --borderColor: #666;
+  --fontColor: #aaa;
 }
 
 ::selection {
@@ -25,6 +46,7 @@
   color: var(--fontSelectionColor);
 }
 
+/* Deprecar 
 :root[data-tema="light"] {
   --gradiente: radial-gradient(
                        ellipse at 50% 50%, 
@@ -45,35 +67,13 @@
   --selectionColor: var(--headingsColor);
   --fontSelectionColor: var(--backgroundColor);
   --highLightColor: lime;
-  /*
-  */
   --backgroundColor: #eee;
   --borderColor: black;
   --fontColor: #222;
 }
 :root[data-tema="dark"] {
-  --gradiente: radial-gradient(
-                      ellipse at 50% 50%, 
-                      #bf398910 0, 
-                      transparent 75%), 
-                    radial-gradient(
-                      ellipse at 50% 50%, 
-                      #bf398910 0, 
-                      transparent 75%); 
-  --dimmedFontColor: #777;
-  --hoverBackground: #282828;
-  --headingsColor: #ecc;
-  --darkerBg: #282828;
-  --linkColor: skyblue;
-  --linkColorHover: white;
-  --corTermo: tomato;
-  --selectionColor: #ecc ;
-  --fontSelectionColor: black;
-  --highLightColor: springgreen;
-  --backgroundColor: #343a3f;
-  --borderColor: #666;
-  --fontColor: #aaa;
 }
+*/
 
 body {
   /*
@@ -87,6 +87,7 @@ p {
 }
 
 strong {
+  color: white;
   font-weight: 500;
 }
 
@@ -177,6 +178,9 @@ a:hover{
   font-size: 85%;
 }
 
+#eu {
+  text-align: center;
+}
 #autor{
   /*
   */
@@ -242,6 +246,7 @@ span#frase{
 }
 
 nav.barra {
+  background: repeating-linear-gradient(90deg, var(--headingsColor),var(--headingsColor), 2px, transparent 0, transparent 10px);
   font-size: 120%;
   display: flex;
   flex-wrap: wrap;
@@ -265,12 +270,16 @@ nav.barra {
   z-index: +100;
   */
 }
-nav {
+
+nav.barra{
+  height: fit-content;
+  padding: 0px;
 }
 nav a {
   margin: 0px;
   color: var(--headingsColor);
-  padding: 3px 14px;
+  font-weight: bold;
+  padding-right: 14px;
   border-radius: var(--borderRadius);
   transition: var(--stdTransition);
 }
@@ -283,6 +292,16 @@ nav.barra a:hover{
 .divGlobalSearch {
   display: flex;
   align-content: center;
+}
+nav.barra img {
+  max-height: 6ch;
+}
+.home {
+  background: var(--headingsColor);
+}
+.home a {
+  color: var(--backgroundColor);
+  padding: 2px 8px;
 }
 
 mark {
