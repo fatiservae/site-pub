@@ -160,7 +160,13 @@ a:hover{
   width: 100%;
 }
 
+ul {
+  padding-left: 0px;
+  margin-left: 0px;
+}
 #artlist li {
+  margin-left: 0px;
+  padding-left: 0px;
   display: none;
 }
 
@@ -716,6 +722,7 @@ p code {
 h1, h2, h3, h4, h5, h6 {
   padding: 0px;
   margin: 1.5ch;
+  margin-left: 0px;
   font-weight: bold;
   color: var(--headingsColor);
 }

@@ -11,19 +11,19 @@
   <link rel='stylesheet' type='text/css' href='./style.css'>
   <link rel="icon" href="./favicon.webp">
   <meta name="description" content="
-
-
-
- 
+  
+  
+  
    
+     
+    
+    
   
   
+  
 
 
-
-
-
-Este é um site pessoal, desculpe a bagunça! Se busca meu curriculum, acesse-o aqui.">
+Sou médico e programador, visite meu projeto de ferramentas médicas Asclepius.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <meta charset="utf-8">
@@ -63,74 +63,151 @@ Este é um site pessoal, desculpe a bagunça! Se busca meu curriculum, acesse-o 
   
   
     <div id=eu>
-<img src=./pix/eu.webp style="border-radius: 100%; max-height: 30vw;">
-<script>
-function randomIndex(valor) {
-  return Math.floor(Math.random() * valor);
-}
-
-function novaFrase() {
-  fetch('/citacoes.json')
-    .then(response => response.json())
-    .then(async data => { 
-      const novoFormato = data.flatMap(item => item.citacoes.map(frase => ({ autor: item.autor, frase })));
-      let index = randomIndex(novoFormato.length);
-      let fraseAleatoria = novoFormato[index].frase;
-
-      
-      while (fraseAleatoria.length > 100) {
-        index = randomIndex(novoFormato.length);
-        fraseAleatoria = novoFormato[index].frase;
-      }
-
-      const autor = novoFormato[index].autor;
-      if (autor.length > 1) {
-        document.getElementById("autor").innerHTML = `<mark id="autor">${autor}</mark>`;
-      }
-      
-      let typedout = "";
-      const comprimento = fraseAleatoria.length;
-
-      
-      for (let i = 0; i < comprimento; i++) {
-        let delay = 90;
+  <img src=./pix/eu.webp style="border-radius: 100%; max-height: 30vw;"></img>
+  <script>
+  function randomIndex(valor) {
+    return Math.floor(Math.random() * valor);
+  }
+  
+  function novaFrase() {
+    fetch('/citacoes.json')
+      .then(response => response.json())
+      .then(async data => { 
+        const novoFormato = data.flatMap(item => item.citacoes.map(frase => ({ autor: item.autor, frase })));
+        let index = randomIndex(novoFormato.length);
+        let fraseAleatoria = novoFormato[index].frase;
+  
         
-        
-        if (fraseAleatoria[i] === '.' || fraseAleatoria[i] === ',') {
-          delay = 500;
+        while (fraseAleatoria.length > 100) {
+          index = randomIndex(novoFormato.length);
+          fraseAleatoria = novoFormato[index].frase;
+        }
+  
+        const autor = novoFormato[index].autor;
+        if (autor.length > 1) {
+          document.getElementById("autor").innerHTML = `<mark id="autor">${autor}</mark>`;
         }
         
-        await new Promise(resolve => setTimeout(resolve, delay));
-        typedout += fraseAleatoria[i];
-        document.getElementById("frase").innerText = typedout;
-      }
-    })
-    .catch(error => console.error('Erro ao buscar o JSON:', error));
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-  novaFrase();
-});
-</script>
-
-<div id="divFrase"> 
-  <span id="frase"></span> 
-  <div id="autor"></div>
-  <br>
-</div>
-
-<style>
-  .divFrase {
-    max-width: 50vw;
+        let typedout = "";
+        const comprimento = fraseAleatoria.length;
+  
+        
+        for (let i = 0; i < comprimento; i++) {
+          let delay = 90;
+          
+          
+          if (fraseAleatoria[i] === '.' || fraseAleatoria[i] === ',') {
+            delay = 500;
+          }
+          
+          await new Promise(resolve => setTimeout(resolve, delay));
+          typedout += fraseAleatoria[i];
+          document.getElementById("frase").innerText = typedout;
+        }
+      })
+      .catch(error => console.error('Erro ao buscar o JSON:', error));
   }
-</style>
+  
+  document.addEventListener("DOMContentLoaded", function() {
+    novaFrase();
+  });
+  </script>
+  
+  <div id="divFrase"> 
+    <span id="frase"></span> 
+    <div id="autor"></div>
+    <br>
+  </div>
+  
+  <style>
+    .divFrase {
+      max-width: 50vw;
+    }
+  </style>
 
 </div>
-<p>Este é um site pessoal, desculpe a bagunça! Se busca meu <em>curriculum</em>, acesse-o <a href="./cv/">aqui</a>.</p>
-<p>Sou médico e programador, visite meu projeto de ferramentas médicas <a href="https://asclepius.com.br">Asclepius</a>.</p>
+<p>Sou médico e programador, visite meu projeto de ferramentas médicas <a href="https://aesclepius.com.br">Asclepius</a>.</p>
 <p>Ou leia mais sobre alguns tópicos de <a href="./tags/direito">direito</a>, na sua maioria sobre <a href="https://aesclepius.com.br/medicina-legal/">medicina legal</a>.</p>
 <p>Sou adepto do minimalismo e do <a href="./tags/estoicismo">estoicismo</a>, a minha <a href="./tags/filosofia">filosofia</a> de vida.</p>
-<p>Meu principal passatempo é o <a href="./tags/automobilismo">automobilismo</a> e viajar. Conheça os <a href="./tags/destinos">destinos</a> pelos quais me interesso.</p>
+<!-- o [automobilismo](/tags/automobilismo) -->
+<p>Meu principal passatempo é viajar. Conheça os <a href="./tags/destinos">destinos</a> pelos quais me interesso.</p>
+<h2 id="páginas-aleatórias">Páginas aleatórias&hellip;</h2>
+<style>
+  li::marker{
+    content: '';
+  }
+</style>
+<ul id="artigos">
+  <li><a data-tags="" href="https://www.jeffersontorres.com.br/cv/">Curriculum Vitae</a></li>
+  <li><a data-tags="" href="https://www.jeffersontorres.com.br/sobre/">Sobre</a></li>
+  <li><a data-tags="[direito]" href="https://www.jeffersontorres.com.br/direito/licitacoes/">Licitações</a></li>
+  <li><a data-tags="" href="https://www.jeffersontorres.com.br/conteudo/">Conteúdo do site</a></li>
+  <li><a data-tags="[sociologia medicina]" href="https://www.jeffersontorres.com.br/piramide-maslow/">Pirâmide das necessidades de Maslow</a></li>
+  <li><a data-tags="[medicina direito penal]" href="https://www.jeffersontorres.com.br/direito/imputabilidade/">Visão forense de teoria tripartite do crime</a></li>
+  <li><a data-tags="" href="https://www.jeffersontorres.com.br/direito/abuso-autoridade/">Lei do abuso de autoridade</a></li>
+  <li><a data-tags="[direito penal]" href="https://www.jeffersontorres.com.br/direito/cautelares/">Medidas cautelares: a prisão</a></li>
+  <li><a data-tags="[Projetos Programação]" href="https://www.jeffersontorres.com.br/vim/">Webvim: editor de texto do hacker viajante</a></li>
+  <li><a data-tags="[psicologia filosofia ciência]" href="https://www.jeffersontorres.com.br/farsa-ockham/">A farsa da navalha de Ockham</a></li>
+  <li><a data-tags="[Filosofia Ciência Psicologia]" href="https://www.jeffersontorres.com.br/vieses/">Compêndio de vieses cognitivos</a></li>
+  <li><a data-tags="[ciência biologia Natureza]" href="https://www.jeffersontorres.com.br/ciencia/isognatus/">Lagarta isognatus desconhecida</a></li>
+  <li><a data-tags="[psicologia Filosofia Inteligência]" href="https://www.jeffersontorres.com.br/filosofia/gell-man/">Efeito Gell Man: perpetuador da desinformação</a></li>
+  <li><a data-tags="[psicologia Filosofia Estoicismo]" href="https://www.jeffersontorres.com.br/filosofia/cleantes/">Cleantes, o exemplo</a></li>
+  <li><a data-tags="[viagem destinos]" href="https://www.jeffersontorres.com.br/viagem/micronesia/pohnpei-micronesia/">Pohnpei: Micronésia</a></li>
+  <li><a data-tags="[psicologia Filosofia Inteligência]" href="https://www.jeffersontorres.com.br/filosofia/multiplas-saidas/">Por trás de toda teoria conspiratória</a></li>
+  <li><a data-tags="[Destinos Viagem Estados Unidos]" href="https://www.jeffersontorres.com.br/viagem/eua/grand-prismatic-spring/">Grand Prismatic Spring - Estados Unidos</a></li>
+  <li><a data-tags="[Culinária receitas]" href="https://www.jeffersontorres.com.br/receitas/pao-de-queijo/">Pão de queijo</a></li>
+  <li><a data-tags="" href="https://www.jeffersontorres.com.br/files/">Arquivos</a></li>
+  <li><a data-tags="[filosofia estoicismo]" href="https://www.jeffersontorres.com.br/filosofia/morte/">A aceitação da morte como modo de vida</a></li>
+  <li><a data-tags="[medicina projetos ciência]" href="https://www.jeffersontorres.com.br/dicionario/">Dicionário</a></li>
+  <li><a data-tags="[ciência História Medicina Culinária Geopolítica]" href="https://www.jeffersontorres.com.br/canais-yt/">Canais que recomendo</a></li>
+  <li><a data-tags="[culinária receitas]" href="https://www.jeffersontorres.com.br/receitas/cervejas/">Guia descomplicado de cervejas</a></li>
+  <li><a data-tags="[psicologia filosofia ciência]" href="https://www.jeffersontorres.com.br/filosofia/reproducao-humana-consideracoes-filosoficas/">Considerações sobre a reprodução humana</a></li>
+  <li><a data-tags="[natureza brasil Destinos]" href="https://www.jeffersontorres.com.br/viagem/brasil/bahia-itacare/">Bahia - Itacaré</a></li>
+  <li><a data-tags="[tecnologia programação]" href="https://www.jeffersontorres.com.br/tecnologia/iphone-e-linux/">Como sincronizar iPhone e Linux</a></li>
+  <li><a data-tags="[Programação Projetos]" href="https://www.jeffersontorres.com.br/tecnologia/stultus-visio/">Slides menos estúpidos: StultusVisio</a></li>
+  <li><a data-tags="[México Viagem Destinos]" href="https://www.jeffersontorres.com.br/viagem/mexico/palenque-mexico/">Palenque - México</a></li>
+  <li><a data-tags="[destinos viagem brasil]" href="https://www.jeffersontorres.com.br/viagem/brasil/espirito-santo-domingos-martins/">Espírito Santo - Domingos Martins</a></li>
+  <li><a data-tags="[Destinos Brasil Viagem]" href="https://www.jeffersontorres.com.br/viagem/brasil/espirito-santo-iriri/">Espiríto Santo - Praia de Iriri</a></li>
+  <li><a data-tags="[viagem brasil]" href="https://www.jeffersontorres.com.br/viagem/brasil/bahia-piata-salvador/">Bahia - Piatã, Salvador</a></li>
+  <li><a data-tags="[ferramentas medicina projetos ciência calculadoras]" href="https://www.jeffersontorres.com.br/sites-uteis/">Websites e páginas úteis</a></li>
+  </ul>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var list = document.getElementById("artigos");
+    var items = Array.from(list.children);
+
+    function shuffle(array) {
+      for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+      }
+      return array;
+    }
+
+    var shuffledItems = shuffle(items);
+
+    while (list.firstChild) {
+      list.removeChild(list.firstChild);
+    }
+
+    
+    
+    
+    
+    
+
+    shuffledItems.slice(0,3).forEach(function(item, index) {
+      list.appendChild(item);
+      
+      
+      
+      
+    });
+  });
+</script>
+
+
 <br>
 <br>
 <br>
