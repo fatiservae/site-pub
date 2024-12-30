@@ -10,25 +10,42 @@
   <link rel='alternate' type='application/rss+xml' title="Jefferson T. RSS" href='./index.xml'>
   <link rel='stylesheet' type='text/css' href='./style.css'>
   <link rel="icon" href="./favicon.webp">
-  <meta name="description" content="
-  
-  
-  
+  <meta name="description" content="  
+
+ 
    
-     
-    
-    
-  
   
   
 
 
-Visite meu projeto de ferramentas médicas Asclepius.">
+
+ 
+
+
+
+
+
+  
+      A farsa da navalha de Ockham
+      A conhecida navalha de Ockham é um mantra científico, correto? Nem tanto.
+
+
+
+  
+    
+      Guilherme de Ockham.
+    
+  
+">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <meta charset="utf-8">
 
   
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   
@@ -48,7 +65,8 @@ Visite meu projeto de ferramentas médicas Asclepius.">
   <div class=home>
     <a href="./index.html">home</a>
     <a href="./files/">files</a>
-    <a href="./cv/">curriculum</a>
+    <a href="./cv/">vitae</a>
+    <a href="https://aesclepius.com.br">aesclepius</a>
   </div>
 </nav>
 </head>
@@ -62,115 +80,160 @@ Visite meu projeto de ferramentas médicas Asclepius.">
   
   
   
-    <div id=eu>
-  <img src=./pix/eu.webp style="border-radius: 100%; max-height: 30vw;"></img>
-  <script>
-  function randomIndex(valor) {
-    return Math.floor(Math.random() * valor);
-  }
-  
-  function novaFrase() {
-    fetch('/citacoes.json')
-      .then(response => response.json())
-      .then(async data => { 
-        const novoFormato = data.flatMap(item => item.citacoes.map(frase => ({ autor: item.autor, frase })));
-        let index = randomIndex(novoFormato.length);
-        let fraseAleatoria = novoFormato[index].frase;
-  
-        
-        while (fraseAleatoria.length > 100) {
-          index = randomIndex(novoFormato.length);
-          fraseAleatoria = novoFormato[index].frase;
-        }
-  
-        const autor = novoFormato[index].autor;
-        if (autor.length > 1) {
-          document.getElementById("autor").innerHTML = `<mark id="autor">${autor}</mark>`;
-        }
-        
-        let typedout = "";
-        const comprimento = fraseAleatoria.length;
-  
-        
-        for (let i = 0; i < comprimento; i++) {
-          let delay = 90;
-          
-          
-          if (fraseAleatoria[i] === '.' || fraseAleatoria[i] === ',') {
-            delay = 500;
-          }
-          
-          await new Promise(resolve => setTimeout(resolve, delay));
-          typedout += fraseAleatoria[i];
-          document.getElementById("frase").innerText = typedout;
-        }
-      })
-      .catch(error => console.error('Erro ao buscar o JSON:', error));
-  }
-  
-  document.addEventListener("DOMContentLoaded", function() {
-    novaFrase();
-  });
-  </script>
-  
-  <div id="divFrase"> 
-    <span id="frase"></span> 
-    <div id="autor"></div>
-    <br>
-  </div>
-  
-  <style>
-    .divFrase {
-      max-width: 50vw;
-    }
-  </style>
+    <div id=eu> <img src=./pix/eu.webp></img> <script>
+function randomIndex(valor) {
+  return Math.floor(Math.random() * valor);
+}
 
+function novaFrase() {
+  fetch('/citacoes.json')
+    .then(response => response.json())
+    .then(async data => { 
+      const novoFormato = data.flatMap(item => item.citacoes.map(frase => ({ autor: item.autor, frase })));
+      let index = randomIndex(novoFormato.length);
+      let fraseAleatoria = novoFormato[index].frase;
+
+      
+      while (fraseAleatoria.length > 100) {
+        index = randomIndex(novoFormato.length);
+        fraseAleatoria = novoFormato[index].frase;
+      }
+
+      const autor = novoFormato[index].autor;
+      if (autor.length > 1) {
+        document.getElementById("autor").innerHTML = `<mark id="autor">${autor}</mark>`;
+      }
+      
+      let typedout = "";
+      const comprimento = fraseAleatoria.length;
+
+      
+      for (let i = 0; i < comprimento; i++) {
+        let delay = 90;
+        
+        
+        if (fraseAleatoria[i] === '.' || fraseAleatoria[i] === ',') {
+          delay = 500;
+        }
+        
+        await new Promise(resolve => setTimeout(resolve, delay));
+        typedout += fraseAleatoria[i];
+        document.getElementById("frase").innerText = typedout;
+      }
+    })
+    .catch(error => console.error('Erro ao buscar o JSON:', error));
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+  novaFrase();
+});
+</script>
+
+<div id="divFrase"> 
+  <span id="frase"></span> 
+  <div id="autor"></div>
+  <br>
 </div>
-<p>Visite meu projeto de ferramentas médicas <a href="https://aesclepius.com.br">Asclepius</a>.</p>
-<p>Ou leia mais sobre alguns tópicos de <a href="./tags/direito">direito</a>, na sua maioria sobre <a href="https://aesclepius.com.br/medicina-legal/">medicina legal</a>.</p>
-<p>Sou adepto do minimalismo e do <a href="./tags/estoicismo">estoicismo</a>, a minha <a href="./tags/filosofia">filosofia</a> de vida.</p>
-<!-- o [automobilismo](/tags/automobilismo) -->
-<p>Meu principal passatempo é viajar. Conheça os <a href="./tags/destinos">destinos</a> pelos quais me interesso.</p>
-<h2 id="páginas-aleatórias">Páginas aleatórias&hellip;</h2>
+
+<style>
+  #divFrase {
+    text-align: center;
+  }
+</style>
+ </div>
+<br>
+<br>
+<br>
 <style>
   li::marker{
     content: '';
   }
 </style>
-<ul id="artigos">
-  <li><a data-tags="" href="https://www.jeffersontorres.com.br/cv/">Curriculum Vitae</a></li>
-  <li><a data-tags="" href="https://www.jeffersontorres.com.br/sobre/">Sobre</a></li>
-  <li><a data-tags="[direito]" href="https://www.jeffersontorres.com.br/direito/licitacoes/">Licitações</a></li>
-  <li><a data-tags="" href="https://www.jeffersontorres.com.br/conteudo/">Conteúdo do site</a></li>
-  <li><a data-tags="[sociologia medicina]" href="https://www.jeffersontorres.com.br/piramide-maslow/">Pirâmide das necessidades de Maslow</a></li>
-  <li><a data-tags="[medicina direito penal]" href="https://www.jeffersontorres.com.br/direito/imputabilidade/">Visão forense de teoria tripartite do crime</a></li>
-  <li><a data-tags="" href="https://www.jeffersontorres.com.br/direito/abuso-autoridade/">Lei do abuso de autoridade</a></li>
-  <li><a data-tags="[direito penal]" href="https://www.jeffersontorres.com.br/direito/cautelares/">Medidas cautelares: a prisão</a></li>
-  <li><a data-tags="[Projetos Programação]" href="https://www.jeffersontorres.com.br/vim/">Webvim: editor de texto do hacker viajante</a></li>
-  <li><a data-tags="[psicologia filosofia ciência]" href="https://www.jeffersontorres.com.br/farsa-ockham/">A farsa da navalha de Ockham</a></li>
-  <li><a data-tags="[Filosofia Ciência Psicologia]" href="https://www.jeffersontorres.com.br/vieses/">Compêndio de vieses cognitivos</a></li>
-  <li><a data-tags="[ciência biologia Natureza]" href="https://www.jeffersontorres.com.br/ciencia/isognatus/">Lagarta isognatus desconhecida</a></li>
-  <li><a data-tags="[psicologia Filosofia Inteligência]" href="https://www.jeffersontorres.com.br/filosofia/gell-man/">Efeito Gell Man: perpetuador da desinformação</a></li>
-  <li><a data-tags="[psicologia Filosofia Estoicismo]" href="https://www.jeffersontorres.com.br/filosofia/cleantes/">Cleantes, o exemplo</a></li>
-  <li><a data-tags="[viagem destinos]" href="https://www.jeffersontorres.com.br/viagem/micronesia/pohnpei-micronesia/">Pohnpei: Micronésia</a></li>
-  <li><a data-tags="[psicologia Filosofia Inteligência]" href="https://www.jeffersontorres.com.br/filosofia/multiplas-saidas/">Por trás de toda teoria conspiratória</a></li>
-  <li><a data-tags="[Destinos Viagem Estados Unidos]" href="https://www.jeffersontorres.com.br/viagem/eua/grand-prismatic-spring/">Grand Prismatic Spring - Estados Unidos</a></li>
-  <li><a data-tags="[Culinária receitas]" href="https://www.jeffersontorres.com.br/receitas/pao-de-queijo/">Pão de queijo</a></li>
-  <li><a data-tags="" href="https://www.jeffersontorres.com.br/files/">Arquivos</a></li>
-  <li><a data-tags="[filosofia estoicismo]" href="https://www.jeffersontorres.com.br/filosofia/morte/">A aceitação da morte como modo de vida</a></li>
-  <li><a data-tags="[medicina projetos ciência]" href="https://www.jeffersontorres.com.br/dicionario/">Dicionário</a></li>
-  <li><a data-tags="[ciência História Medicina Culinária Geopolítica]" href="https://www.jeffersontorres.com.br/canais-yt/">Canais que recomendo</a></li>
-  <li><a data-tags="[culinária receitas]" href="https://www.jeffersontorres.com.br/receitas/cervejas/">Guia descomplicado de cervejas</a></li>
-  <li><a data-tags="[psicologia filosofia ciência]" href="https://www.jeffersontorres.com.br/filosofia/reproducao-humana-consideracoes-filosoficas/">Considerações sobre a reprodução humana</a></li>
-  <li><a data-tags="[natureza brasil Destinos]" href="https://www.jeffersontorres.com.br/viagem/brasil/bahia-itacare/">Bahia - Itacaré</a></li>
-  <li><a data-tags="[tecnologia programação]" href="https://www.jeffersontorres.com.br/tecnologia/iphone-e-linux/">Como sincronizar iPhone e Linux</a></li>
-  <li><a data-tags="[Programação Projetos]" href="https://www.jeffersontorres.com.br/tecnologia/stultus-visio/">Slides menos estúpidos: StultusVisio</a></li>
-  <li><a data-tags="[México Viagem Destinos]" href="https://www.jeffersontorres.com.br/viagem/mexico/palenque-mexico/">Palenque - México</a></li>
-  <li><a data-tags="[destinos viagem brasil]" href="https://www.jeffersontorres.com.br/viagem/brasil/espirito-santo-domingos-martins/">Espírito Santo - Domingos Martins</a></li>
-  <li><a data-tags="[Destinos Brasil Viagem]" href="https://www.jeffersontorres.com.br/viagem/brasil/espirito-santo-iriri/">Espiríto Santo - Praia de Iriri</a></li>
-  <li><a data-tags="[viagem brasil]" href="https://www.jeffersontorres.com.br/viagem/brasil/bahia-piata-salvador/">Bahia - Piatã, Salvador</a></li>
-  <li><a data-tags="[ferramentas medicina projetos ciência calculadoras]" href="https://www.jeffersontorres.com.br/sites-uteis/">Websites e páginas úteis</a></li>
-  </ul>
+<div id="artigos">
+  
+      <div id="artigo"><a data-tags="[psicologia filosofia ciência]" href="https://www.jeffersontorres.com.br/farsa-ockham/">A farsa da navalha de Ockham</a><br>
+      <p><p>A conhecida navalha de Ockham é um mantra científico, correto? Nem tanto.
+
+
+
+  <div id="img-div">
+    <img src="./pix/guilherme-ockham.webp">
+      <figcaption>Guilherme de Ockham.</figcaption>
+    </img>
+  </div>
+</p></p>
+      </div>
+    
+      <div id="artigo"><a data-tags="[Filosofia Ciência Psicologia]" href="https://www.jeffersontorres.com.br/vieses/">Compêndio de vieses cognitivos</a><br>
+      <p><p>Uma visão detalhada e exemplificativa de todas falhas lógico-cognitivas da <em>psique</em> humana.</p>
+<p><img src=./pix/vieses.ia.webp></img></p></p>
+      </div>
+    
+      <div id="artigo"><a data-tags="[psicologia Filosofia Inteligência]" href="https://www.jeffersontorres.com.br/filosofia/gell-man/">Efeito Gell Man: perpetuador da desinformação</a><br>
+      <p><p>O quão capacitado você é para julgar uma informação jornalística?</p>
+
+
+
+  <div id="img-div">
+    <img src="./pix/lendo-jornal.png">
+      <figcaption></figcaption>
+    </img>
+  </div></p>
+      </div>
+    
+      <div id="artigo"><a data-tags="[psicologia Filosofia Estoicismo]" href="https://www.jeffersontorres.com.br/filosofia/cleantes/">Cleantes, o exemplo</a><br>
+      <p><style>
+    img {
+        max-height: 60vh;
+    }
+</style>
+<h2 id="a-inspiração-para-história-de-cristo">A inspiração para história de Cristo?</h2>
+<p><strong>Cleantes de Assos</strong> foi um filósofo helenístico discípulo de Zenão.</p>
+
+
+
+  <div id="img-div">
+    <img src="./pix/cleanthes.png">
+      <figcaption></figcaption>
+    </img>
+  </div></p>
+      </div>
+    
+      <div id="artigo"><a data-tags="[viagem destinos]" href="https://www.jeffersontorres.com.br/viagem/micronesia/pohnpei-micronesia/">Pohnpei e Nan Madol</a><br>
+      <p><p><img src=./pix/destinos/ruinas-nan-madol.jpg> </img></p>
+<p>Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico. As ruínas e sítios estão entre os menos explicados do planeta.</p></p>
+      </div>
+    
+      <div id="artigo"><a data-tags="[filosofia estoicismo]" href="https://www.jeffersontorres.com.br/filosofia/morte/">A aceitação da morte como modo de vida</a><br>
+      <p><p>
+
+<style>
+.videoc{
+ display: flex;
+ justify-content: center; /* Centraliza horizontalmente */
+ align-items: center; /* Centraliza verticalmente */
+}
+.videoc iframe{
+}
+
+</style></p>
+
+
+
+  <div id="img-div">
+    <img src="./pix/many-paths.jpg">
+      <figcaption></figcaption>
+    </img>
+  </div>
+
+<p>O quanto devemos temer ou antecipar a morte? Conheça um caminho de vida que a morte pode nos oferecer.</p></p>
+      </div>
+    
+      <div id="artigo"><a data-tags="[culinária receitas]" href="https://www.jeffersontorres.com.br/receitas/cervejas/">Guia descomplicado de cervejas</a><br>
+      <p><p>Um guia pessoal e opinativo sobre a mais antiga bebida criada pelo homem.</p>
+<p><img src="./pix/culinaria/cervejas/copo-medina.jpg"></img></p></p>
+      </div>
+    </div>
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -197,7 +260,8 @@ Visite meu projeto de ferramentas médicas Asclepius.">
     
     
 
-    shuffledItems.slice(0,3).forEach(function(item, index) {
+    
+    shuffledItems.forEach(function(item, index) {
       list.appendChild(item);
       
       

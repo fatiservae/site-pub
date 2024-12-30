@@ -22,18 +22,92 @@
     border: 2px solid black;
   }
 &lt;/style&gt;
-&lt;img style=&#34;max-height: 35vh;border-radius: 50%; border: 2px solid black&#34; src=&#34;../pix/eu3.jpg&#34; alt=&#34;&#34;&gt;
-&lt;!-- &lt;figcaption&gt;Eu circa 2022&lt;/figcaption&gt; --&gt;
-&lt;/img&gt;
+
+ 
+&lt;div class=&#34;carousel&#34;&gt;
+  &lt;div class=&#34;button-container&#34;&gt;
+    &lt;button type=&#34;button&#34; id=&#34;anterior&#34;&gt;Anterior&lt;/button&gt;
+    &lt;button type=&#34;button&#34; id=&#34;proximo&#34;&gt;Próxima&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;conteudo&#34;&gt;
+  
+  
+  
+  
+    &lt;div class=&#34;legend&#34;&gt;&lt;p&gt; &lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;slide&#34;&gt;
+      &lt;a href=&#34;../pix/eu3.jpg&#34;&gt;
+        &lt;img src=&#34;../pix/eu3.jpg&#34;&gt;&lt;/img&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  
+
+  
+  
+  
+    &lt;div class=&#34;legend&#34;&gt;&lt;p&gt; &lt;/p&gt;&lt;/div&gt;
+    &lt;div class=&#34;slide&#34;&gt;
+      &lt;a href=&#34;../pix/eu.webp&#34;&gt;
+        &lt;img src=&#34;../pix/eu.webp&#34;&gt;&lt;/img&gt;
+      &lt;/a&gt;
+    &lt;/div&gt;
+  
+
+
+  
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;script&gt;
+(function() {
+  let currentSlide = 0;
+  let slides = document.querySelectorAll(&#34;.carousel .slide&#34;);
+  let legends = document.querySelectorAll(&#34;.carousel .legend&#34;);
+  let totalSlides = slides.length;
+  let anterior = document.getElementById(&#34;anterior&#34;);
+  let proximo = document.getElementById(&#34;proximo&#34;);
+
+  function showSlide(n) {
+    currentSlide = (n + totalSlides) % totalSlides;
+    for (let i = 0; i &lt; totalSlides; i++) {
+      slides[i].style.display = &#34;none&#34;;
+      legends[i].style.display = &#34;none&#34;;
+    }
+    slides[currentSlide].style.display = &#34;block&#34;;
+    legends[currentSlide].style.display = &#34;block&#34;;
+  }
+  
+  showSlide(currentSlide);
+  
+  
+  
+  
+  proximo.addEventListener(&#34;click&#34;, () =&gt; {
+    showSlide(currentSlide + 1);
+  })
+  anterior.addEventListener(&#34;click&#34;, () =&gt; {
+    showSlide(currentSlide - 1);
+  })
+  
+  
+  
+  
+  
+  
+  
+  
+})();
+  &lt;/script&gt;
+
+
 &lt;h2 id=&#34;quem-sou&#34;&gt;Quem sou&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Atualmente&lt;/strong&gt; sou médico, apaixonado por tecnologia, tendo a me enxergar como um &lt;strong&gt;cientista&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Afeto pela ciência desde criança, filho de eletricista industrial, sou curioso e inquieto. Estas características se refletiram no meu curso de vida diversificado e marcado por mudanças, das quais me &lt;strong&gt;orgulho!&lt;/strong&gt;&lt;/p&gt;
 &lt;h2 id=&#34;perfil&#34;&gt;Perfil&lt;/h2&gt;
-&lt;p&gt;Autodidata, sou afeto a pesquisa científica, crítico dos modelos atuais de ensino e sou conhecido pela diversidade de áreas de interesse.&lt;/p&gt;
+&lt;p&gt;Autodidata, afeto a pesquisa científica, crítico dos modelos atuais de ensino e conhecido pela diversidade de áreas de interesse.&lt;/p&gt;
 &lt;h2 id=&#34;áreas&#34;&gt;Áreas&lt;/h2&gt;
 &lt;h3 id=&#34;medicina&#34;&gt;Medicina&lt;/h3&gt;
 &lt;p&gt;Pretendo me especializar em anestesiologia ou medicina intensiva adulta.&lt;/p&gt;
-&lt;p&gt;Meu principal interesse de ramo é no &lt;strong&gt;manejo da dor&lt;/strong&gt;, um campo com muitas lacunas, pesquisas interessantes e muito espaço para inovação.&lt;/p&gt;
+&lt;p&gt;Meus principais interesses de ramo são a &lt;strong&gt;medicina forense&lt;/strong&gt;, uma área policial que interage intensamente com o direito e o &lt;strong&gt;manejo da dor&lt;/strong&gt;, um campo com muitas lacunas, pesquisas interessantes e muito espaço para inovação.&lt;/p&gt;
 &lt;p&gt;Meus estágios obrigatórios envolveram todas as áreas da medicina interna, epidemiologia e saúde básica, já que o currículo da ESCS é de metodologia ativa e todo o curso é baseado na imersão prática, desde o primeiro semestre.&lt;/p&gt;
 &lt;p&gt;Mantenho um site de ferramentas diagnósticas médicas, o &lt;a href=&#34;https://aesclepius.com.br&#34;&gt;Aesclepius&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;programação&#34;&gt;Programação&lt;/h3&gt;
@@ -56,8 +130,7 @@
 &lt;p&gt;Fluently english, both british and american.&lt;/p&gt;
 &lt;p&gt;Spreche etwas Deutsch&amp;hellip; nein sehr gut.&lt;/p&gt;
 &lt;h2 id=&#34;contato&#34;&gt;Contato&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://t.me/fatiservae&#34;&gt;Telegram: @fatiservae&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://web.whatsapp.com/send/?phone=5561998739933&amp;amp;text=&#34;&gt;WhatsApp: 61 99873-9933&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Não uso redes sociais. Entre em contato por &lt;a href=&#34;https://t.me/fatiservae&#34;&gt;Telegram: @fatiservae&lt;/a&gt; ou &lt;a href=&#34;https://web.whatsapp.com/send/?phone=5561998739933&amp;amp;text=&#34;&gt;WhatsApp: 61 99873-9933&lt;/a&gt;.&lt;/p&gt;
 </description>
 	</item>
 	
@@ -820,7 +893,8 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 		<pubDate>Sun, 25 Feb 2024 23:34:21 -0300</pubDate>
 		
 		<guid>https://www.jeffersontorres.com.br/farsa-ockham/</guid>
-		<description>
+		<description>&lt;p&gt;A conhecida navalha de Ockham é um mantra científico, correto? Nem tanto.
+
 
 
   &lt;div id=&#34;img-div&#34;&gt;
@@ -828,7 +902,7 @@ Se quer colaborar, me chame no Telegram: @fatiservae
       &lt;figcaption&gt;Guilherme de Ockham.&lt;/figcaption&gt;
     &lt;/img&gt;
   &lt;/div&gt;
-
+&lt;/p&gt;
 &lt;p&gt;Suponha que uma raça alienígena entre em contato com os humanos e decida estudar o nosso comportamento em jogos. Mais especificamente, eles têm interesse em &lt;strong&gt;xadrez&lt;/strong&gt;. Há, contudo, um problema: &lt;em&gt;os aliens são incapazes de enxergar as peças no tabuleiro, tudo que conseguem ver é um emaranhado de borrões entre peças brancas e pretas&lt;/em&gt;. Para eles, nenhum mecanismo do jogo é visível.&lt;/p&gt;
 
 
@@ -876,8 +950,7 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 &lt;li&gt;LAGRANGE, J. L. (1997). &lt;strong&gt;Analytical Mechanics - 1788&lt;/strong&gt;. ISBN 9789401589031. Retrieved March 22, 2022.&lt;/li&gt;
 &lt;li&gt;OCKHAM, Guilherme. Ockham&amp;rsquo;s Theory of Propositions : &lt;strong&gt;Part II of the Summa Logicae&lt;/strong&gt;. Translated by Alfred J. Freddoso and Henry Schuurman and introduced by Alfred J. Freddoso, University of Notre Dame Press, Notre Dame, IN, 1980. Reprinted, St. Augustine&amp;rsquo;s Press, South Bend, IN, 1998.&lt;/li&gt;
 &lt;li&gt;RUSSELL, Bertrand (1972). &lt;strong&gt;A History of Western Philosophy&lt;/strong&gt;. Simon &amp;amp; Schuster.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
 	</item>
 	
 	<item>
@@ -886,7 +959,9 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 		<pubDate>Wed, 14 Feb 2024 10:39:08 -0300</pubDate>
 		
 		<guid>https://www.jeffersontorres.com.br/vieses/</guid>
-		<description>&lt;h2 id=&#34;introdução-ao-códex&#34;&gt;Introdução ao códex&lt;/h2&gt;
+		<description>&lt;p&gt;Uma visão detalhada e exemplificativa de todas falhas lógico-cognitivas da &lt;em&gt;psique&lt;/em&gt; humana.&lt;/p&gt;
+&lt;p&gt;&lt;img src=../pix/vieses.ia.webp&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;h2 id=&#34;introdução-ao-códex&#34;&gt;Introdução ao códex&lt;/h2&gt;
 &lt;!-- [Clique aqui](/pix/codex-vieses.jpg) para visualizar a imagem grande dos vieses. --&gt;
 &lt;h2 id=&#34;humanos-se-orientam-mal&#34;&gt;Humanos se orientam mal&lt;/h2&gt;
 &lt;h3 id=&#34;o-problema-xy&#34;&gt;O problema XY&lt;/h3&gt;
@@ -976,8 +1051,7 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 &lt;p&gt;No Brasil, a máxima ficou eternizada pelo comercial dos cigarros Vila protagonizando Gérson, futebolista famoso à época:&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Por que pagar mais caro se o Vila me dá tudo aquilo que eu quero de um bom cigarro? Gosto de levar vantagem em tudo, certo? Leve vantagem você também, leve Vila Rica!&lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
+&lt;/blockquote&gt;</description>
 	</item>
 	
 	<item>
@@ -1092,7 +1166,7 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 		<pubDate>Thu, 11 Jan 2024 09:38:02 -0300</pubDate>
 		
 		<guid>https://www.jeffersontorres.com.br/filosofia/gell-man/</guid>
-		<description>&lt;h2 id=&#34;o-quão-capacitado-você-é-para-julgar-uma-informação-jornalística&#34;&gt;O quão capacitado você é para julgar uma informação jornalística?&lt;/h2&gt;
+		<description>&lt;p&gt;O quão capacitado você é para julgar uma informação jornalística?&lt;/p&gt;
 
 
 
@@ -1102,6 +1176,7 @@ Se quer colaborar, me chame no Telegram: @fatiservae
     &lt;/img&gt;
   &lt;/div&gt;
 
+&lt;h2 id=&#34;uma-questão-de-ponto-de-vista&#34;&gt;Uma questão de ponto de vista&lt;/h2&gt;
 &lt;p&gt;Sr. Carlos é um médico renomado, cirurgião especialista. Está em casa pela manhã, lendo as notícias em seu jornal e se depara com uma reportagem sobre uma patologia cirúrgica que conhece muito bem.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Percebe claramente que o jornalista não tem a mínima ideia do que está falando.&lt;/strong&gt; A reportagem é recheada de furos e inconsistências, além de confusões conceituais básicas sobre a área médica.&lt;/p&gt;
 &lt;p&gt;Indignado, ele folheia as páginas.&lt;/p&gt;
@@ -1139,10 +1214,7 @@ A amnésia de Gell-Mann é o efeito de curta memória que temos sobre a estupide
   &lt;span class=&#34;etiqueta&#34;&gt;
 Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memória.&lt;br&gt; &lt;em&gt;a-mnesis&lt;/em&gt; é a negação absoluta, ausência.
  &lt;/span&gt;
-&lt;/div&gt;
-
-
-</description>
+&lt;/div&gt;</description>
 	</item>
 	
 	<item>
@@ -1156,17 +1228,17 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
         max-height: 60vh;
     }
 &lt;/style&gt;
+&lt;h2 id=&#34;a-inspiração-para-história-de-cristo&#34;&gt;A inspiração para história de Cristo?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Cleantes de Assos&lt;/strong&gt; foi um filósofo helenístico discípulo de Zenão.&lt;/p&gt;
 
 
 
   &lt;div id=&#34;img-div&#34;&gt;
     &lt;img src=&#34;../pix/cleanthes.png&#34;&gt;
-      &lt;figcaption&gt;Cleantes, o cara.&lt;/figcaption&gt;
+      &lt;figcaption&gt;&lt;/figcaption&gt;
     &lt;/img&gt;
   &lt;/div&gt;
 
-&lt;h2 id=&#34;a-inspiração-para-história-de-cristo&#34;&gt;A inspiração para história de Cristo?&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;Cleantes de Assos&lt;/strong&gt; foi um filósofo helenístico discípulo de Zenão.&lt;/p&gt;
 &lt;p&gt;Nascido pobre, viveu a juventude sob a alcunha de estúpido porque foi atleta durante o dia e, a noite, era servente para se sustentar.&lt;/p&gt;
 &lt;p&gt;Aos 50, trabalhava como carregador de água para um agricultor e de farinha para uma cozinheira.&lt;/p&gt;
 &lt;p&gt;Foi acusado injustamente de manter atividades ilegais. Seus patrões depuseram a seu favor e foi absolvido. Na verdade, o tribunal ficou tão convencido de sua retidão de conduta que se determinou pagamento de um salário público a Cleantes. &lt;strong&gt;Ele rejeitou.&lt;/strong&gt;&lt;/p&gt;
@@ -1174,18 +1246,18 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
 &lt;p&gt;Assumiu a escola de filosofia após a morte de Zenão mas continuou trabalhando como carregador de água e outras cargas.&lt;/p&gt;
 &lt;p&gt;Morreu na pobreza, solidão e ensino da filosofia estoica.&lt;/p&gt;
 &lt;h2 id=&#34;a-diferença&#34;&gt;A diferença?&lt;/h2&gt;
-&lt;p&gt;A diferença é que Cleantes de fato existiu e Cristo foi, ao que tudo indica, uma alegoria poderosa para salvação humana.&lt;/p&gt;
-</description>
+&lt;p&gt;A diferença é que Cleantes de fato existiu e Cristo foi, ao que tudo indica, uma alegoria poderosa para salvação humana.&lt;/p&gt;</description>
 	</item>
 	
 	<item>
-		<title>Pohnpei: Micronésia</title>
+		<title>Pohnpei e Nan Madol</title>
 		<link>https://www.jeffersontorres.com.br/viagem/micronesia/pohnpei-micronesia/</link>
 		<pubDate>Thu, 04 Jan 2024 06:27:45 -0300</pubDate>
 		
 		<guid>https://www.jeffersontorres.com.br/viagem/micronesia/pohnpei-micronesia/</guid>
-		<description>&lt;h2 id=&#34;a-terra-do-mistério&#34;&gt;A terra do mistério&lt;/h2&gt;
-&lt;p&gt;Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico. As ruínas e sítios arqueológicos estão entre os menos explicados do planeta.&lt;/p&gt;
+		<description>&lt;p&gt;&lt;img src=../pix/destinos/ruinas-nan-madol.jpg&gt; &lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico. As ruínas e sítios estão entre os menos explicados do planeta.&lt;/p&gt;
+&lt;h2 id=&#34;a-terra-do-mistério&#34;&gt;A terra do mistério&lt;/h2&gt;
 &lt;p&gt;A palavra &lt;em&gt;pohnpei&lt;/em&gt; significa terra surgida de orações e explica a origem mitológica das ilhas, que seriam fruto das orações dos antigos migrantes oriundos da China em uma canoa mágica.&lt;/p&gt;
 
  
@@ -1196,17 +1268,6 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
   &lt;/div&gt;
   &lt;div class=&#34;conteudo&#34;&gt;
   
-    
-    
-    
-      &lt;div class=&#34;legend&#34;&gt;&lt;p&gt;Ruínas de Nan Madol&lt;/p&gt;&lt;/div&gt;
-      &lt;div class=&#34;slide&#34;&gt;
-        &lt;a href=&#34;../pix/destinos/ruinas-nan-madol.jpg&#34;&gt;
-          &lt;img src=&#34;../pix/destinos/ruinas-nan-madol.jpg&#34;&gt;&lt;/img&gt;
-        &lt;/a&gt;
-      &lt;/div&gt;
-    
-
     
     
     
@@ -1354,8 +1415,7 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
 &lt;h2 id=&#34;referências&#34;&gt;Referências&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;SACKS, Oliver. &lt;strong&gt;A ilha dos daltônicos&lt;/strong&gt;. Tradução: Laura Teixeira Motta. ISBN: 978-85-7164-682-7. Companhia das Letras. 1997.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
 	</item>
 	
 	<item>
@@ -1581,16 +1641,17 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
 }
 
 &lt;/style&gt;&lt;/p&gt;
-&lt;h2 id=&#34;as-escolhas-como-sofrimento&#34;&gt;As escolhas como sofrimento&lt;/h2&gt;
 
 
 
   &lt;div id=&#34;img-div&#34;&gt;
     &lt;img src=&#34;../pix/many-paths.jpg&#34;&gt;
-      &lt;figcaption&gt;Em deviantart.com © by username465, 2016&lt;/figcaption&gt;
+      &lt;figcaption&gt;&lt;/figcaption&gt;
     &lt;/img&gt;
   &lt;/div&gt;
 
+&lt;p&gt;O quanto devemos temer ou antecipar a morte? Conheça um caminho de vida que a morte pode nos oferecer.&lt;/p&gt;
+&lt;h2 id=&#34;as-escolhas-como-sofrimento&#34;&gt;As escolhas como sofrimento&lt;/h2&gt;
 &lt;p&gt;Somos forçados contra diversos caminhos na vida.&lt;/p&gt;
 &lt;p&gt;Escolhas são feitas. Muitas.&lt;/p&gt;
 &lt;p&gt;Poderíamos reduzir a vida de um ser humano normal como uma série de decisões e seus desdobramentos, muitas vezes condicionantes das próximas decisões, o que resulta numa recursividade e a problemas como &lt;strong&gt;depressão, ansiedade&lt;/strong&gt; e muitas outras condições. Somos &lt;em&gt;obrigados&lt;/em&gt; a &lt;em&gt;decidir&lt;/em&gt; o que vestimos, o que comer, se teremos filhos, a profissão etc.&lt;/p&gt;
@@ -1604,7 +1665,7 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
 &lt;/div&gt;
 
 
-&lt;p&gt;Quanto mais decisões precisamos tomar e quanto maior o número de opções, mais a mente humana sofre com a pressão resultante. Este fenômeno é, na verdade, muito estudado. Schwartz observou que, em lojas, quanto mais opções os compradores têm, maior a ansiedade associada à compra¹.&lt;/p&gt;
+&lt;p&gt;Quanto mais decisões precisamos tomar e quanto maior o número de opções, mais a mente humana sofre com a pressão resultante. Este fenômeno é, na verdade, muito estudado. Schwartz observou que, em lojas, quanto mais opções os compradores têm, maior a ansiedade associada à compra&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
 &lt;p&gt;Portanto, não é nenhum mistério para ninguém que uma vida baseada na relutância e na excessiva ponderação das escolhas é uma vida angustiada.&lt;/p&gt;
 &lt;h2 id=&#34;a-aceitação-como-caminho&#34;&gt;A aceitação como caminho&lt;/h2&gt;
 &lt;p&gt;Cerca de mil anos antes da consolidação do cristianismo, durante o período das &lt;em&gt;escolas helenísticas&lt;/em&gt;, o &lt;strong&gt;estoicismo&lt;/strong&gt; pavimentou o caminho para esta que viria a ser a principal religão ocidental.&lt;/p&gt;
@@ -1665,12 +1726,18 @@ Seneca
 &lt;p&gt;&lt;strong&gt;A maioria de nós não está no extremo de Boethius. Pensemos sobre.&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;referências&#34;&gt;Referências&lt;/h2&gt;
-&lt;ol&gt;
-&lt;li&gt;Schwartz, Barry. &lt;strong&gt;The Paradox of Choice&lt;/strong&gt;. New York, United States: Harper Perennial. ISBN 0-06-000568-8. 2004.&lt;/li&gt;
+&lt;ol start=&#34;2&#34;&gt;
 &lt;li&gt;Boethius, Anicius Manlius Severinus. &lt;strong&gt;&lt;a href=&#34;../files/Filosofia/Boethius-Consolation-of-Philosophy.pdf&#34;&gt;The Consolation of Philosophy&lt;/a&gt;&lt;/strong&gt;. Translated from the Latin by W. V. Cooper. Published by the Ex-classics Project, 2009. &lt;a href=&#34;http://www.exclassics.com&#34;&gt;http://www.exclassics.com&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;MARCUS, Aurelius. &lt;strong&gt;Meditations&lt;/strong&gt;. c. 161-180 &lt;em&gt;anno domini&lt;/em&gt;. Imperium Romanum.&lt;/li&gt;
 &lt;/ol&gt;
-</description>
+&lt;div class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;
+&lt;p&gt;Schwartz, Barry. &lt;strong&gt;The Paradox of Choice&lt;/strong&gt;. New York, United States: Harper Perennial. ISBN 0-06-000568-8. 2004.&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;</description>
 	</item>
 	
 	<item>
@@ -1765,11 +1832,12 @@ Seu melhor vídeo é sobre Alan Turing, pelo simples motivo de expor a informaç
 		<pubDate>Mon, 20 Nov 2023 20:46:46 -0300</pubDate>
 		
 		<guid>https://www.jeffersontorres.com.br/receitas/cervejas/</guid>
-		<description>&lt;h2 id=&#34;-avisos&#34;&gt;🔞 Avisos!&lt;/h2&gt;
+		<description>&lt;p&gt;Um guia pessoal e opinativo sobre a mais antiga bebida criada pelo homem.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../pix/culinaria/cervejas/copo-medina.jpg&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;h2 id=&#34;-avisos&#34;&gt;🔞 Avisos!&lt;/h2&gt;
 &lt;p&gt;Esta página faz recomendações de bebidas alcoólicas, direcionadas para maiores de 18 anos de idade.&lt;/p&gt;
 &lt;p&gt;Todas cervejas desta páginas são recomendações minhas. Costumo degustá-las com carnes ou massas e salgados.&lt;/p&gt;
 &lt;h2 id=&#34;definições&#34;&gt;Definições&lt;/h2&gt;
-&lt;p&gt;Cervejas são simples.&lt;/p&gt;
 &lt;p&gt;O termo mais complexo para uma boa discussão sobre cervejas é a escala &lt;strong&gt;IBU, International Bitterness Units&lt;/strong&gt;. Trata-se apenas de uma escala de amargor que foi mais aceita. O cervejeiro calcula o IBU a partir de fórmulas, mas a sua validação de mercado se dá pela degustação. Quanto maior o IBU, mais amarga e/ou mais duradouro é o amargor.&lt;/p&gt;
 &lt;p&gt;E os vários tipos de cerveja? Novamente, sejamos simples:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Pilsen&lt;/strong&gt; se refere à cerveja clara, de espuma leve mas com colarinho evidente e de sabor florado, fresco. Foi possível sua obtenção a partir da revolução industrial e melhora dos processos de filtração. No mercado, muitas recebem reforço de gaseificação. Sempre servida gelada¹.&lt;/p&gt;
@@ -1927,8 +1995,7 @@ Seu melhor vídeo é sobre Alan Turing, pelo simples motivo de expor a informaç
 &lt;h2 id=&#34;notas&#34;&gt;Notas&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Exceto no Marrocos, povo doido 🤣.&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/ol&gt;</description>
 	</item>
 	
 	<item>

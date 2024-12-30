@@ -11,11 +11,11 @@
   --fonte: var(--fontColor); 
   --vidro: rgba(6, 6, 4, .2);
   --borders: 1px solid var(--fontColor);
-  --borderRadius: none;
+  --borderRadius: 8px;
   --stdBorder: 1px solid var(--fontColor);
   color: var(--fontColor);
-  font-family: 'Fira code';
-  font-weight: 300;
+  font-family: 'Sans';
+  font-weight: 400;
   font-size: 1rem;
   background-color: var(--backgroundColor);
   --gradiente: radial-gradient(
@@ -160,7 +160,8 @@ a:hover{
   width: 100%;
 }
 
-ul {
+ul, li{
+  font-style: normal;
   padding-left: 0px;
   margin-left: 0px;
 }
@@ -187,6 +188,11 @@ ul {
 #eu {
   text-align: center;
 }
+#eu img {
+  border-radius: 100%; 
+  max-height: 30vh;
+}
+
 #autor{
   /*
   */
@@ -198,10 +204,9 @@ ul {
 #autor, #frase{
   /*
   */
-  text-indent: 0% !important ;
   max-width: 60vw ;
   width: fit-content ;
-  text-align: start ;
+  text-align: center ;
 }
 #boasvindas {
   padding: 0;
@@ -252,7 +257,7 @@ span#frase{
 }
 
 nav.barra {
-  background: repeating-linear-gradient(90deg, var(--headingsColor),var(--headingsColor), 2px, transparent 0, transparent 10px);
+  /* background: repeating-linear-gradient(90deg, var(--headingsColor),var(--headingsColor), 2px, transparent 0, transparent 10px); */
   font-size: 120%;
   display: flex;
   flex-wrap: wrap;
@@ -284,14 +289,16 @@ nav.barra{
 nav a {
   margin: 0px;
   color: var(--headingsColor);
-  font-weight: bold;
   padding-right: 14px;
   border-radius: var(--borderRadius);
   transition: var(--stdTransition);
+  font-weight: bold;
 }
 nav.barra a:active,
 nav.barra a:hover{
+  /*
   background-color: var(--hoverBackground);
+  */
   color: var(--fontColor); /* Para evitar ser sobreposto por a{}*/
   text-decoration: none;
 }
@@ -303,11 +310,16 @@ nav.barra img {
   max-height: 6ch;
 }
 .home {
-  background: var(--headingsColor);
+  border: 1px solid var(--borderColor);
+  background: var(--vidro);
+  border-radius: var(--borderRadius);
+  padding: 5px;
+  /* background: var(--headingsColor); */
 }
 .home a {
-  color: var(--backgroundColor);
+  /* color: var(--backgroundColor); */
   padding: 2px 8px;
+  font-family: 'bebas neue'
 }
 
 mark {
@@ -342,7 +354,7 @@ input{
   height: 2em ;
   text-align: start;
   background-color: var(--hoverBackground);
-  border: none;
+  border: 1px solid var(--borderColor);
   border-radius: var(--borderRadius);
   background-color: var(--hoverBackground);
 
@@ -687,11 +699,13 @@ th, td {
   content: none;
 }
 #TableOfContents li:hover{
-  font-weight: 400;
 }
 #TableOfContents li:hover::marker {
+  font-weight: bold;
   content: ">";
-  font-style: bold;
+}
+#TableOfContents li li a{
+  padding-left: 1rem;
 }
 
 pre, blockquote {
@@ -800,10 +814,47 @@ hr {
   background: var(--gradiente);
 }
 
+div#artigos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+div#artigos #artigo{
+  flex: 1 1 200px;
+  max-width: 20vw;
+  min-width: 200px;
+  width: fit-content;
+  height: fit-content;
+  margin: 1ch;
+  background: var(--vidro);
+  border: 1px solid var(--borderColor);
+  padding: 1rem;
+  border-radius: var(--borderRadius);
+}
+div#artigos #artigo img {
+  max-height: 150px;
+}
+div#artigos #artigo p ,
+div#artigos #artigo h2 ,
+div#artigos #artigo h3 ,
+div#artigos #artigo h4 ,
+div#artigos #artigo h5 {
+  text-align: start;
+  color: var(--fontColor);
+  font-weight: normal;
+  font-size: 100%;
+}
 /* Mediaqueries */
 @media only screen and (max-width: 800px){
   img {
     max-height: 80vw;
+  }
+  div#artigos {
+    display: block;
+  }
+  div#artigos #artigo{
+    max-width: none;
   }
 }
 @media only screen and (max-width: 900px){
