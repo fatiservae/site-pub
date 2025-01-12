@@ -4,7 +4,7 @@
   
   
   
-  <title>Efeito Gell Man: perpetuador da desinformação | Jefferson T.</title>
+  <title>Efeito Gell Mann, o perpetuador da desinformação | Jefferson T.</title>
   <link rel="canonical" href="https://www.jeffersontorres.com.br/">
   <link rel='alternate' type='application/rss+xml' title="Jefferson T. RSS" href='../../index.xml'>
   <link rel='stylesheet' type='text/css' href='../../style.css'>
@@ -55,7 +55,7 @@
 <body>
   <article>
 
-  <h1>Efeito Gell Man: perpetuador da desinformação</h1>
+  <h1>Efeito Gell Mann, o perpetuador da desinformação</h1>
 
 
     
@@ -139,5 +139,20 @@ Amnésia vem do grego <em>mnesis</em>, que signfica registo, memória.<br> <em>a
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>

@@ -530,5 +530,20 @@ Esta é uma página de controle do site.
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>

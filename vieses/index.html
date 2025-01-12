@@ -101,6 +101,7 @@
         <li><a href="#reatância-psicológica">Reatância psicológica</a></li>
         <li><a href="#psicologia-reversa">Psicologia reversa</a></li>
         <li><a href="#justificação-do-sistema">Justificação do sistema</a></li>
+        <li><a href="#efeito-tetris">Efeito tetris</a></li>
       </ul>
     </li>
     <li><a href="#a-ação-humana-é-direcionada-a-tarefas-já-consolidadas">A ação humana é direcionada a tarefas já consolidadas</a>
@@ -191,6 +192,9 @@
 <p>Quando um cliente percebe estar sendo persuadido na compra de um produto, tende a rejeitá-lo ou comprar o concorrente, apenas para manter a sensação de liberdade.</p>
 <h3 id="psicologia-reversa">Psicologia reversa</h3>
 <h3 id="justificação-do-sistema">Justificação do sistema</h3>
+<h3 id="efeito-tetris">Efeito tetris</h3>
+<p><strong>A mente humana pode adotar um paradigma como padrão, tornando a visão do mundo real distorcida no sentido de um viés padrão.</strong></p>
+<p>Um jogador de tetris de longa data tende a enxergar coisas do mundo real como peças de tetris que se encaixam.</p>
 <h2 id="a-ação-humana-é-direcionada-a-tarefas-já-consolidadas">A ação humana é direcionada a tarefas já consolidadas</h2>
 <h3 id="efeito-bumerangue">Efeito bumerangue</h3>
 <h3 id="efeito-de-doação">Efeito de doação</h3>
@@ -256,5 +260,20 @@
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>

@@ -712,11 +712,10 @@ pre, blockquote {
   width: fit-content;
   padding: 2ch;
   padding-left: 1ch;
+  font-style: italic;
   margin: 2ch;
+  background: var(--gradiente);
   margin-left: 0px;
-  border-left: 1px solid var(--headingsColor); 
-  background: var(--vidro);
-  border-radius: var(--borderRadius);
 }
 p code {
   border: none;
@@ -811,7 +810,6 @@ hr {
 }
 
 .etiqueta {
-  background: var(--gradiente);
 }
 
 div#artigos {
@@ -845,6 +843,11 @@ div#artigos #artigo h5 {
   font-weight: normal;
   font-size: 100%;
 }
+
+div#artigos-lista-simples {
+  text-align: center;
+}
+
 /* Mediaqueries */
 @media only screen and (max-width: 800px){
   img {
@@ -885,4 +888,3 @@ div#artigos #artigo h5 {
     border: none;
   }
 }
-

@@ -15,7 +15,7 @@
 
   
     
-      Guilherme de Ockham.
+      
     
   
 ">
@@ -63,6 +63,16 @@
   <script src=../baseof-tema.js></script>
   
   
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#novacula-occami">Novacula Occami</a></li>
+    <li><a href="#o-mundo-real">O mundo real</a></li>
+    <li><a href="#o-verdadeiro-xadrez">O verdadeiro xadrez</a></li>
+    <li><a href="#justiça-seja-feita">Justiça seja feita</a></li>
+    <li><a href="#bibliografia">Bibliografia</a></li>
+  </ul>
+</nav>
+  
   
   
     <p>A conhecida navalha de Ockham é um mantra científico, correto? Nem tanto.
@@ -71,7 +81,7 @@
 
   <div id="img-div">
     <img src="../pix/guilherme-ockham.webp">
-      <figcaption>Guilherme de Ockham.</figcaption>
+      <figcaption></figcaption>
     </img>
   </div>
 </p>
@@ -98,7 +108,7 @@
   </div>
 
 <p>Guilherme de Ockham foi um frade e filósofo inglês que formulou o princípio da econômia da natureza, como se segue:</p>
-<p><strong><em>Numquam ponenda est pluralitas sine necessitate</em>.</strong></p>
+<p><strong><em>Numquam ponenda est pluralitas sine necessitate</em></strong><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
 <p>Para ele — e também para Kant, Newton e outros — todo fenômeno tende a acontecer por uma economia natural de recursos, sendo presumível que o mecanismo por trás de quaisquer estruturas desconhecidas deve ser ou evoluir para o mais simples possível.</p>
 <p>Com o tempo, a ciência positivista moderna, impulsionada pela revolução francesa e pelas sociedades secretas europeias insistiram no seu uso literário, tendo cuminado no termo <em>navalha de Ockham</em> como alusão à regra prática de eliminarmos todas teorias mais complexas como menos prováveis.</p>
 <h2 id="o-mundo-real">O mundo real</h2>
@@ -114,15 +124,23 @@
 <p>Sua teoria será, obviamente, tratada como uma <em>piada</em> pela academia que louva Ockham.</p>
 <h2 id="justiça-seja-feita">Justiça seja feita</h2>
 <p>Se Ockham estivesse correto em seu princípio, a explicação mais econômica para todas questões mundanas seria a teísta: <strong>Deus criou todas as coisas como são e pronto</strong>.</p>
-<p>Porém, sejamos justos aqui: Ockham propôs, na verdade, um princípio de econômia energética natural, mais bem formulado e rigorosamente curado pela matemática através dos trabalhos de Lagrange. A deturpação de sua filosofia se deu pela academia positivista dos séculos XVIII e XIX que tornaram toda a filosofia natural em uma atividade de reducionismo.</p>
+<p>Porém, sejamos justos aqui: Ockham propôs, na verdade, um princípio de econômia energética natural, mais bem formulado e rigorosamente curado pela matemática através dos trabalhos de Lagrange<sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>. A deturpação de sua filosofia se deu pela academia positivista dos séculos XVIII e XIX que tornaram toda a filosofia natural em uma atividade de reducionismo.</p>
 <p>Portanto, cuidemos. Nem toda teoria elegante e simplista representa a realidade. Aliás, quase nunca o faz.</p>
-<hr>
-<h2 id="referências">Referências</h2>
+<h2 id="bibliografia">Bibliografia</h2>
 <ol>
-<li>LAGRANGE, J. L. (1997). <strong>Analytical Mechanics - 1788</strong>. ISBN 9789401589031. Retrieved March 22, 2022.</li>
-<li>OCKHAM, Guilherme. Ockham&rsquo;s Theory of Propositions : <strong>Part II of the Summa Logicae</strong>. Translated by Alfred J. Freddoso and Henry Schuurman and introduced by Alfred J. Freddoso, University of Notre Dame Press, Notre Dame, IN, 1980. Reprinted, St. Augustine&rsquo;s Press, South Bend, IN, 1998.</li>
 <li>RUSSELL, Bertrand (1972). <strong>A History of Western Philosophy</strong>. Simon &amp; Schuster.</li>
 </ol>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>OCKHAM, Guilherme. Ockham&rsquo;s Theory of Propositions : <strong>Part II of the Summa Logicae</strong>. Translated by Alfred J. Freddoso and Henry Schuurman and introduced by Alfred J. Freddoso, University of Notre Dame Press, Notre Dame, IN, 1980. Reprinted, St. Augustine&rsquo;s Press, South Bend, IN, 1998.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2">
+<p>LAGRANGE, J. L. (1997). <strong>Analytical Mechanics - 1788</strong>. ISBN 9789401589031. Retrieved March 22, 2022.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
   
   
     <br>
@@ -149,5 +167,20 @@
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>

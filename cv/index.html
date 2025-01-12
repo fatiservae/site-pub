@@ -247,5 +247,20 @@ Atualmente sou médico, apaixonado por tecnologia, tendo a me enxergar como um c
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>

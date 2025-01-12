@@ -184,14 +184,10 @@ Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico
 
 <p>Nan Madol é uma outra palavra local que significa <em>pedras organizadas</em> ou ainda <em>cidade organizada</em>. Os moradores locais acreditam que as ruínas são uma entrada para um submergido continente.</p>
 <p>Estas estórias foram aproveitadas por Lovecraft em seus livros.</p>
-<p>Os moradores locais apresentam alto índice de acromatopsia genética, conforme observou o neurologista Oliver Sacks¹:</p>
-<div style="display:flex; align-content:center">
-  <span class="etiqueta">
-"Fui à Micronésia como neurologista ou neuroantropólogo com a intenção de ver de que maneira indivíduos e comunidades reagiam à condições endêmicas incomuns - uma cegueira total e hereditária para cores em Pingelap e Pohnpei, um distúrbio neurodegeneneativo progressivo e fatal em Guam e Rota. Mas também me prenderam a atenção a vida cultural e a história dessas ilhas, sua flora e fauna únicas, suas origens geológicas singulares. Se a princípio examinar pacientes, visitar sítios arqueológicos, perambular por florestas tropicais e mergulhar de snorkel nos recifes pareciam atividades sem relação umas com as outras, depois fundiram-se todas em uma experiência única e indivisível, uma imersão total na vida da ilha".
- </span>
-</div>
-
-
+<p>Os moradores locais apresentam alto índice de acromatopsia genética, conforme observou o neurologista Oliver Sacks<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>:</p>
+<blockquote>
+<p>&ldquo;Fui à Micronésia como neurologista ou neuroantropólogo com a intenção de ver de que maneira indivíduos e comunidades reagiam à condições endêmicas incomuns - uma cegueira total e hereditária para cores em Pingelap e Pohnpei, um distúrbio neurodegeneneativo progressivo e fatal em Guam e Rota. Mas também me prenderam a atenção a vida cultural e a história dessas ilhas, sua flora e fauna únicas, suas origens geológicas singulares. Se a princípio examinar pacientes, visitar sítios arqueológicos, perambular por florestas tropicais e mergulhar de snorkel nos recifes pareciam atividades sem relação umas com as outras, depois fundiram-se todas em uma experiência única e indivisível, uma imersão total na vida da ilha&rdquo;.</p>
+</blockquote>
 <p>Bruce Best é um professor da universidade de Guam que, sozinho, construiu praticamente toda estrutura comunicacional de Pohnpei e das ilhas correlatas. Até onde pude apurar, ele estva vivo e trabalhando em setembro 2023. Ele coordena as operações, inclusive militares, na região.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/hf0taYjdZOw?si=Qni0mJGBd50ygZlz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p class="legend">Banda de moradores locais, c. 2013</p>
@@ -215,9 +211,14 @@ Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico
 <p>Site oficial de turismo local: <a href="https://visitpohnpei.travel/travel-advisory/">https://visitpohnpei.travel/travel-advisory/</a></p>
 <hr>
 <h2 id="referências">Referências</h2>
+<div class="footnotes" role="doc-endnotes">
+<hr>
 <ol>
-<li>SACKS, Oliver. <strong>A ilha dos daltônicos</strong>. Tradução: Laura Teixeira Motta. ISBN: 978-85-7164-682-7. Companhia das Letras. 1997.</li>
+<li id="fn:1">
+<p>SACKS, Oliver. <strong>A ilha dos daltônicos</strong>. Tradução: Laura Teixeira Motta. ISBN: 978-85-7164-682-7. Companhia das Letras. 1997.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
 </ol>
+</div>
   
   
     <br>
@@ -243,5 +244,20 @@ Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>

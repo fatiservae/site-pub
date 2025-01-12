@@ -9,9 +9,7 @@
   <link rel='alternate' type='application/rss+xml' title="Jefferson T. RSS" href='../../index.xml'>
   <link rel='stylesheet' type='text/css' href='../../style.css'>
   <link rel="icon" href="../../favicon.webp">
-  <meta name="description" content="StultusVisio
-Não há nada mais improdutivo que montar apresentações de slides!
-O tempo que se perde com diagramação, baboseiras, temas e formatação é absurdo!
+  <meta name="description" content="Não há nada mais estúpido que montar apresentações de slides!
 
 
 
@@ -19,9 +17,7 @@ O tempo que se perde com diagramação, baboseiras, temas e formatação é absu
     
       Acadêmico montando uma apresentação em Power Point.
     
-  
-
-O formato de arquivo associado aos principais programas de slideshows são estúpidos porque se pressupõe que o computador/aparelho de apresentação tenha o mesmo software instalado.  Além disso, a apresentação é mostrada a partir do arquivo editável. Em nenhuma área da informática isso é tão contraproducente! Seria como ler um livro inteiro no Word!">
+  ">
   <meta name="keywords" content="Programação, Projetos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
@@ -68,7 +64,6 @@ O formato de arquivo associado aos principais programas de slideshows são estú
   
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#stultusvisio">StultusVisio</a></li>
     <li><a href="#filosofia">Filosofia</a></li>
     <li><a href="#exemplos">Exemplos</a></li>
     <li><a href="#uso">Uso</a></li>
@@ -81,9 +76,7 @@ O formato de arquivo associado aos principais programas de slideshows são estú
   
   
   
-    <h2 id="stultusvisio">StultusVisio</h2>
-<p><strong>Não há nada mais improdutivo que montar apresentações de slides!</strong></p>
-<p>O tempo que se perde com diagramação, baboseiras, temas e formatação é absurdo!</p>
+    <p><strong>Não há nada mais estúpido que montar apresentações de slides!</strong></p>
 
 
 
@@ -93,6 +86,7 @@ O formato de arquivo associado aos principais programas de slideshows são estú
     </img>
   </div>
 
+<p>O tempo que se perde com diagramação, baboseiras, temas e formatação é absurdo!</p>
 <p>O formato de arquivo associado aos principais programas de <em>slideshows</em> são estúpidos porque se pressupõe que o computador/aparelho de apresentação tenha o mesmo software instalado.  Além disso, a apresentação é mostrada a partir do arquivo editável. Em nenhuma área da informática isso é tão contraproducente! <strong>Seria como ler um livro inteiro no Word!</strong></p>
 
 
@@ -206,7 +200,6 @@ Imprima na opção <code>Salvar para PDF</code>.</p>
 <li><input disabled="" type="checkbox"> zoom ad-hoc do slide atual.</li>
 <li><input disabled="" type="checkbox"> incluir arquivos de fontes.</li>
 </ul>
-
   
   
     <br>
@@ -232,5 +225,20 @@ Imprima na opção <code>Salvar para PDF</code>.</p>
     By Jefferson T. - @fatiservae - 2024 
   </footer>
   
+  <script>
+      const footnotes = document.querySelector(".footnotes");
+      const hrElement = footnotes.querySelector("hr");
+      const referenceItem = footnotes.querySelector("ol");
+      
+      if (footnotes) {
+        const heading = document.createElement("h2");
+        heading.textContent = "Referências";
+        footnotes.insertBefore(heading, referenceItem);
+      }
+      
+      if (hrElement) {
+        hrElement.remove();
+      }
+  </script>
 </body>
 </html>
