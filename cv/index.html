@@ -11,45 +11,20 @@
   <link rel="icon" href="../favicon.webp">
   <meta name="description" content="
 
- 
+
 
   
-    Anterior
-    Próxima
-  
-  
-  
-  
-  
-  
-     
     
-      
-        
       
     
   
 
-  
-  
-  
-     
-    
-      
-        
-      
-    
-  
-
-
-  
-  
-
-
-
-
+www.jefferson.med.br
 Quem sou
-Atualmente sou médico, apaixonado por tecnologia, tendo a me enxergar como um cientista.">
+Atualmente sou médico, apaixonado por tecnologia, tendo a me enxergar como um cientista.
+Afeto pela ciência desde criança, filho de eletricista industrial, sou curioso e inquieto. Estas características se refletiram no meu curso de vida diversificado e marcado por mudanças, das quais me orgulho!
+Perfil
+Autodidata, afeto a pesquisa científica, crítico dos modelos atuais de ensino e conhecido pela diversidade de áreas de interesse.">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index, follow">
   <meta charset="utf-8">
@@ -93,22 +68,6 @@ Atualmente sou médico, apaixonado por tecnologia, tendo a me enxergar como um c
   <script src=../baseof-tema.js></script>
   
   
-      <nav id="TableOfContents">
-  <ul>
-    <li><a href="#quem-sou">Quem sou</a></li>
-    <li><a href="#perfil">Perfil</a></li>
-    <li><a href="#áreas">Áreas</a>
-      <ul>
-        <li><a href="#medicina">Medicina</a></li>
-        <li><a href="#programação">Programação</a></li>
-      </ul>
-    </li>
-    <li><a href="#ensino">Ensino</a></li>
-    <li><a href="#línguas">Línguas</a></li>
-    <li><a href="#contato">Contato</a></li>
-  </ul>
-</nav>
-  
   
   
     <style>
@@ -118,83 +77,16 @@ Atualmente sou médico, apaixonado por tecnologia, tendo a me enxergar como um c
     border: 2px solid black;
   }
 </style>
+<p>
 
- 
-<div class="carousel">
-  <div class="button-container">
-    <button type="button" id="anterior">Anterior</button>
-    <button type="button" id="proximo">Próxima</button>
+
+  <div id="img-div">
+    <img src="../pix/eu3.jpg">
+      <figcaption></figcaption>
+    </img>
   </div>
-  <div class="conteudo">
-  
-  
-  
-  
-    <div class="legend"><p> </p></div>
-    <div class="slide">
-      <a href="../pix/eu3.jpg">
-        <img src="../pix/eu3.jpg"></img>
-      </a>
-    </div>
-  
 
-  
-  
-  
-    <div class="legend"><p> </p></div>
-    <div class="slide">
-      <a href="../pix/eu.webp">
-        <img src="../pix/eu.webp"></img>
-      </a>
-    </div>
-  
-
-
-  
-  </div>
-</div>
-<script>
-(function() {
-  let currentSlide = 0;
-  let slides = document.querySelectorAll(".carousel .slide");
-  let legends = document.querySelectorAll(".carousel .legend");
-  let totalSlides = slides.length;
-  let anterior = document.getElementById("anterior");
-  let proximo = document.getElementById("proximo");
-
-  function showSlide(n) {
-    currentSlide = (n + totalSlides) % totalSlides;
-    for (let i = 0; i < totalSlides; i++) {
-      slides[i].style.display = "none";
-      legends[i].style.display = "none";
-    }
-    slides[currentSlide].style.display = "block";
-    legends[currentSlide].style.display = "block";
-  }
-  
-  showSlide(currentSlide);
-  
-  
-  
-  
-  proximo.addEventListener("click", () => {
-    showSlide(currentSlide + 1);
-  })
-  anterior.addEventListener("click", () => {
-    showSlide(currentSlide - 1);
-  })
-  
-  
-  
-  
-  
-  
-  
-  
-})();
-  </script>
-
-
+<a href="https://www.jefferson.med.br">www.jefferson.med.br</a></p>
 <h2 id="quem-sou">Quem sou</h2>
 <p><strong>Atualmente</strong> sou médico, apaixonado por tecnologia, tendo a me enxergar como um <strong>cientista</strong>.</p>
 <p>Afeto pela ciência desde criança, filho de eletricista industrial, sou curioso e inquieto. Estas características se refletiram no meu curso de vida diversificado e marcado por mudanças, das quais me <strong>orgulho!</strong></p>
