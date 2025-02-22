@@ -5,10 +5,40 @@
 	<description>Recent content in Programação on Jefferson T.</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
-	<lastBuildDate>Sun, 17 Mar 2024 21:16:47 -0300</lastBuildDate>
+	<lastBuildDate>Sat, 22 Feb 2025 12:38:39 -0300</lastBuildDate>
     
         <atom:link href="https://www.jeffersontorres.com.br/tags/programa%C3%A7%C3%A3o/index.xml" rel="self" type="application/rss+xml" />
 	
+	
+	<item>
+		<title>SxPres: minimalistic presentations</title>
+		<link>https://www.jeffersontorres.com.br/sxpres/</link>
+		<pubDate>Sat, 22 Feb 2025 12:38:39 -0300</pubDate>
+		
+		<guid>https://www.jeffersontorres.com.br/sxpres/</guid>
+		<description>&lt;p&gt;&lt;strong&gt;The slide presentation programs are just to stupid!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Lets fix-it!&lt;/p&gt;
+
+
+
+  &lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../../pix/explain-much.gif&#34;&gt;
+      &lt;figcaption&gt;Yourself creating a Power Point presentation.&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
+&lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
+&lt;p&gt;SxPres is a rich builder of presentations.&lt;/p&gt;
+&lt;p&gt;By the KISS phylosophy SxPres was built as an compiled way of making presentations.&lt;/p&gt;
+&lt;h1 id=&#34;inspirations&#34;&gt;Inspirations&lt;/h1&gt;
+&lt;p&gt;Inspired by roff, nroff and groff.&lt;/p&gt;
+&lt;h1 id=&#34;goal&#34;&gt;Goal&lt;/h1&gt;
+&lt;p&gt;To be a web supported mininalistic way of presenting talks, classes or lessons.&lt;/p&gt;
+&lt;h1 id=&#34;use&#34;&gt;Use&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;To be written&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
+&lt;p&gt;Se the &lt;a href=&#34;../../sxpres-doc/sxpres/index.html&#34;&gt;rust style documentation here&lt;/a&gt;.&lt;/p&gt;</description>
+	</item>
 	
 	<item>
 		<title>Curriculum Vitae</title>
@@ -2156,138 +2186,6 @@ Seu melhor vídeo é sobre Alan Turing, pelo simples motivo de expor a informaç
 &lt;p&gt;Tecnicamente a Apple chama esse encapsulamento de &amp;ldquo;bundles&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Trata-se de uma solução elegante ao problema de segurança entre espaço dos aplicativos. Tradicionalmente em Android é possível a um App alterar arquivos de outros aplicativos, desde que no mesmo nível de acesso e/ou autoria. Como o usuário Android é solicitado o tempo inteiro a compartilhar espaços de arquivos e acesso (as típicas menssagens &lt;em&gt;&amp;ldquo;permitir acesso às fotos&amp;rdquo;&lt;/em&gt; ou &lt;em&gt;&amp;ldquo;permitir que o App X acesse a câmera&amp;rdquo;&lt;/em&gt;) um grande número de aplicativos começa a ter capacidade de manipulação de outros. Estes acessos solicitados existem no iOS, mas de forma diferente, porque cada acesso é um ponto de montagem de apenas leitura.&lt;/p&gt;
 </description>
-	</item>
-	
-	<item>
-		<title>Slides menos estúpidos: StultusVisio</title>
-		<link>https://www.jeffersontorres.com.br/tecnologia/stultus-visio/</link>
-		<pubDate>Mon, 06 Nov 2023 10:31:17 -0300</pubDate>
-		
-		<guid>https://www.jeffersontorres.com.br/tecnologia/stultus-visio/</guid>
-		<description>&lt;p&gt;&lt;strong&gt;Não há nada mais estúpido que montar apresentações de slides!&lt;/strong&gt;&lt;/p&gt;
-
-
-
-  &lt;div id=&#34;img-div&#34;&gt;
-    &lt;img src=&#34;../../pix/explain-much.gif&#34;&gt;
-      &lt;figcaption&gt;Acadêmico montando uma apresentação em Power Point.&lt;/figcaption&gt;
-    &lt;/img&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;O tempo que se perde com diagramação, baboseiras, temas e formatação é absurdo!&lt;/p&gt;
-&lt;p&gt;O formato de arquivo associado aos principais programas de &lt;em&gt;slideshows&lt;/em&gt; são estúpidos porque se pressupõe que o computador/aparelho de apresentação tenha o mesmo software instalado.  Além disso, a apresentação é mostrada a partir do arquivo editável. Em nenhuma área da informática isso é tão contraproducente! &lt;strong&gt;Seria como ler um livro inteiro no Word!&lt;/strong&gt;&lt;/p&gt;
-
-
-
-  &lt;div id=&#34;img-div&#34;&gt;
-    &lt;img src=&#34;../../pix/slides.jpg&#34;&gt;
-      &lt;figcaption&gt;Você e seus slides.&lt;/figcaption&gt;
-    &lt;/img&gt;
-  &lt;/div&gt;
-
-&lt;p&gt;Decidi então criar um sistema próprio e automatizado.&lt;/p&gt;
-&lt;h2 id=&#34;filosofia&#34;&gt;Filosofia&lt;/h2&gt;
-&lt;div style=&#34;display:flex; align-content:center&#34;&gt;
-  &lt;span class=&#34;etiqueta&#34;&gt;
-Stultus visio é um &lt;strong&gt;parser&lt;/strong&gt; para HTML, usando como inspiração o antigo sistema Roff/Nroff/Groff.&lt;br&gt;
-A regra semântica central é a âncora, um termo que inicia no começo da linha com ponto, como &lt;em&gt;.image&lt;/em&gt;.&lt;br&gt;
-Tentei concentrar a compilação literal de um &amp;ltdiv&amp;gt para cada slide.&lt;br&gt;
-O básico da linguagem é o &lt;strong&gt;paradigma procedural&lt;/strong&gt;.&lt;br&gt;
-Não há suporte a recorrência, ainda.
- &lt;/span&gt;
-&lt;/div&gt;
-
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/EstalineCCCP/StultusVisio&#34;&gt;StultusVisio no GitHub&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;exemplos&#34;&gt;Exemplos&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&#34;https://estalinecccp.github.io/StultusVisio/Exemplo/minha_apresentacao.html&#34;&gt;Exemplo simples com vídeo, imagem e listas.&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://estalinecccp.github.io/Dor-Toracica/&#34;&gt;Apresentação sobre dor torácica que fiz em 2023, numa versão básica.&lt;/a&gt;&lt;/p&gt;
-&lt;h2 id=&#34;uso&#34;&gt;Uso&lt;/h2&gt;
-&lt;p&gt;Um software simples que te obriga a montar slides coerentes.&lt;/p&gt;
-&lt;p&gt;Um slide deve conter apenas um vídeo, duas images ou texto. Evite inserir ambos.&lt;/p&gt;
-&lt;p&gt;Para fluxogramas, timelines, tabelas e mídias de dados organizados, use &lt;a href=&#34;https://github.com/mermaid-js/mermaid&#34;&gt;Mermaid&lt;/a&gt;, conforme exemplo abaixo.&lt;/p&gt;
-&lt;p&gt;Crie um arquivo como &lt;code&gt;minha_apresentacao.stv&lt;/code&gt; e edite-o:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.title Título da apresentação
-.foot Um rodapé.
-# Estes são comentários porque começam com #. 
-# As âncoras .script e .style apontam 
-# para arquivos personalizados de 
-# configuração. São opcionais.
-.script ./Config/style.css
-.style ./Config/script.js
-
---- 
-.heading Os três hífens iniciam um slide.
-.list
-Primeiro item de uma lista.
-Segundo item de uma lista.
-Se quiser lista ordenada, use .ordlist
----
-.image ./Images/exemplo.jpg
-# um slide com imagem
----
-.video ./Videos/exemplo.mp4
-# slide com vídeo
----
-.urlvideo &amp;#34;iframe do YouTube&amp;#34;
-# esta âncora .urlvideo serve para integrar iframes
----
-.heading Exemplo de fluxograma em mermaid
-.mermaid
-graph TD
-A --- B
-B--&amp;gt;C[fa:fa-ban Fim]
-B--&amp;gt;D(fa:fa-spinner);
-C--&amp;gt;A
-
----
-.subheading Um slide com tabela
-.table
-Coluna 1 | Coluna 2 | Coluna 3
-Item 1 | Item 2 | Item 3
-Última 1 | Última 2 | Última 3
----
-.heading Um exemplo de lista ordenada.
-.ordlist
-Primeiro item numerado.
-Segundo.
-Mais um.
-Último.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;No mesmo diretório do arquvio, execute o StultusVisio:&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ stultusvisio minha_apresentacao.stv
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A apresentação em &lt;code&gt;HTML&lt;/code&gt; será criada no mesmo diretório, com mesmo nome do arquivo.&lt;/p&gt;
-&lt;p&gt;Abra-a em qualquer navegador web. O arquivo é portável e único. Basta compartilhar o HTML em si.&lt;/p&gt;
-&lt;p&gt;Para personalizar estilos e comportamento, aponte para arquivos personalizados de &lt;code&gt;script.js&lt;/code&gt; e &lt;code&gt;style.css&lt;/code&gt;.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;❗Erros de sintaxe no arquivo presentation.stv são renderizados como slides com uma mensagem de erro.
-&lt;/code&gt;&lt;/pre&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;⚠️ A violação da filosofia do software produz comportamento imprevisto. 
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;controles&#34;&gt;Controles&lt;/h2&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;t   :   Abra/feche a ajuda.
-j   :   Vá ao próximo slide.
-k   :   Vá ao slide anterior.
-p   :   Alterne para modo printável. 
-gg  :   Vá ao primeiro slide.
-G   :   Vá ao último slide.
-m   :   Abra o marcador interativo.
-x   :   Altere tamanho do marcador.
-
-Deslize para passar slides em telas móveis com aparelho deitado.
-&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;salvar-como-pdf&#34;&gt;Salvar como PDF&lt;/h2&gt;
-&lt;p&gt;Pressione &lt;code&gt;p&lt;/code&gt; para alternar no modo printável.
-Em qualquer navegador, escolha modo &lt;code&gt;landscape&lt;/code&gt; e em opções avançadas, desmarque &lt;code&gt;headers and footers&lt;/code&gt; ou &lt;code&gt;cabeçalhos e rodapés&lt;/code&gt;.
-Imprima na opção &lt;code&gt;Salvar para PDF&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;desenvolvimento&#34;&gt;Desenvolvimento&lt;/h2&gt;
-&lt;p&gt;Se você é programador, &lt;a href=&#34;../../stultus-doc/stultusvisio/index.html&#34;&gt;acesse aqui&lt;/a&gt; a documentação.&lt;/p&gt;
-&lt;h2 id=&#34;progresso&#34;&gt;Progresso&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; básico de uso geral.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; marcador circular.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; controles vim-like.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; implementar opção STDIN file.&lt;/li&gt;
-&lt;li&gt;&lt;input checked=&#34;&#34; disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; implementar tabelas.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; marcador do tipo desenho.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; zoom ad-hoc do slide atual.&lt;/li&gt;
-&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; incluir arquivos de fontes.&lt;/li&gt;
-&lt;/ul&gt;</description>
 	</item>
 	
 	<item>
