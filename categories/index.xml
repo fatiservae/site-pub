@@ -27,16 +27,103 @@
   &lt;/div&gt;
 
 &lt;h2 id=&#34;what-is-it&#34;&gt;What is it?&lt;/h2&gt;
-&lt;p&gt;SxPres is a rich builder of presentations.&lt;/p&gt;
-&lt;p&gt;By the KISS phylosophy SxPres was built as an compiled way of making presentations.&lt;/p&gt;
+&lt;p&gt;Simplex Presentation &amp;mdash; SxPres is a rich builder of presentations.&lt;/p&gt;
+&lt;p&gt;SxPres was built as an compiled way of making presentations. It obeys the &lt;a href=&#34;https://en.wikipedia.org/wiki/KISS_principle&#34;&gt;KISS&lt;/a&gt; phylosophy.&lt;/p&gt;
 &lt;h1 id=&#34;inspirations&#34;&gt;Inspirations&lt;/h1&gt;
 &lt;p&gt;Inspired by roff, nroff and groff.&lt;/p&gt;
 &lt;h1 id=&#34;goal&#34;&gt;Goal&lt;/h1&gt;
-&lt;p&gt;To be a web supported mininalistic way of presenting talks, classes or lessons.&lt;/p&gt;
+&lt;p&gt;To be a web target mininalistic way of presenting talks, classes or lessons with no fuss slideshow.&lt;/p&gt;
 &lt;h1 id=&#34;use&#34;&gt;Use&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;To be written&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The use of SxPres is based on a markdown syntax combined with a reduced set of navigation controls.&lt;/p&gt;
+&lt;h2 id=&#34;writing-a-presentation&#34;&gt;Writing a presentation&lt;/h2&gt;
+&lt;p&gt;Open a &lt;code&gt;example.stv&lt;/code&gt; text file and start typing. It&amp;rsquo;s self explanatory:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;.heading
+SxPres
+.subheading
+Let&amp;#39;s learn about it!
+.text
+Press &amp;#39;J&amp;#39;
+---
+.text
+This is a text in a slide.
+.list 
+And this is a firtst item of a list.
+This is the second.
+Etc.
+.heading
+Texts and lists:
+# Even that the .heading appears last, will be rendered on the top of the slide.
+---
+# This is a comment and will be ingored.
+# Those three dashes (---) starts a new slide.
+.ordlist 
+Lists can be ordered, producing numbered items.
+In this case, three!
+Next slide, an image and then a video...
+---
+.image
+example.jpg
+One caption to this image:
+Line breaks are permitted!
+# The image above should be in the same directory or be
+# pointed with full path like:
+# /your/path/example.jpg
+---
+.video
+example.mp4
+# The .video tag will insert the example.mp4 video on the same directory.
+---
+.subheading 
+Mermaid diagrams can be inserted also!
+.mermaid
+graph TD;
+a(A) --&amp;gt; b(B);
+c(C) --&amp;gt; d(D);
+a --&amp;gt; c;
+b --&amp;gt; c;
+---
+.heading 
+A title for the slide
+.subheading 
+A subtitle: let&amp;#39;s make a table!
+.table 
+1st column | 2nd | 3rd 
+2nd line | middle collumn | last
+.text
+The next slide is a blank one.
+---
+---
+.image
+example.jpg
+.draft
+# This slide contains an image but will not be rendered, since it&amp;#39;s marked as draft.
+.footer 
+A foot note to be shown in all slides.
+# Footer text can be inserted at any slide, even on draft ones.
+---
+# &amp;#34;Actually&amp;#34;, configs can be passed at any time, like the logo below:
+.logo
+logo.png
+.text
+The end.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then, run:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;$ sxpres --input example.stv
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;A &lt;code&gt;example.html&lt;/code&gt; file will appear. Open it with some browser. See the hosted version &lt;a href=&#34;../sxpres-doc/example.html&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h3 id=&#34;controls&#34;&gt;Controls&lt;/h3&gt;
+&lt;p&gt;Controls are keept simple and vim-like inspired.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;t   :   Open and close the help pop-up.
+j   :   Next slide.
+k   :   Previous slide.
+p   :   Printable mode. 
+gg  :   Go to 1st slide.
+G   :   Go to last slide.
+m   :   Show round pointer.
+x   :   Change pointer size..
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;In screen devices, swipe to go trhought slides.&lt;/p&gt;
+&lt;h2 id=&#34;where-is-it&#34;&gt;Where is it?&lt;/h2&gt;
+&lt;p&gt;In my &lt;a href=&#34;https://github.com/fatiservae/sxpres&#34;&gt;GitHub&lt;/a&gt; page.&lt;/p&gt;
 &lt;h2 id=&#34;documentation&#34;&gt;Documentation&lt;/h2&gt;
-&lt;p&gt;Se the &lt;a href=&#34;../sxpres-doc/sxpres/index.html&#34;&gt;rust style documentation here&lt;/a&gt;.&lt;/p&gt;</description>
+&lt;p&gt;See the &lt;a href=&#34;../sxpres-doc/sxpres/index.html&#34;&gt;rust style documentation here&lt;/a&gt;.&lt;/p&gt;</description>
 	</item>
 	
 	<item>

@@ -84,16 +84,103 @@ Lets fix-it!
   </div>
 
 <h2 id="what-is-it">What is it?</h2>
-<p>SxPres is a rich builder of presentations.</p>
-<p>By the KISS phylosophy SxPres was built as an compiled way of making presentations.</p>
+<p>Simplex Presentation &mdash; SxPres is a rich builder of presentations.</p>
+<p>SxPres was built as an compiled way of making presentations. It obeys the <a href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a> phylosophy.</p>
 <h1 id="inspirations">Inspirations</h1>
 <p>Inspired by roff, nroff and groff.</p>
 <h1 id="goal">Goal</h1>
-<p>To be a web supported mininalistic way of presenting talks, classes or lessons.</p>
+<p>To be a web target mininalistic way of presenting talks, classes or lessons with no fuss slideshow.</p>
 <h1 id="use">Use</h1>
-<p><em>To be written</em>.</p>
+<p>The use of SxPres is based on a markdown syntax combined with a reduced set of navigation controls.</p>
+<h2 id="writing-a-presentation">Writing a presentation</h2>
+<p>Open a <code>example.stv</code> text file and start typing. It&rsquo;s self explanatory:</p>
+<pre tabindex="0"><code>.heading
+SxPres
+.subheading
+Let&#39;s learn about it!
+.text
+Press &#39;J&#39;
+---
+.text
+This is a text in a slide.
+.list 
+And this is a firtst item of a list.
+This is the second.
+Etc.
+.heading
+Texts and lists:
+# Even that the .heading appears last, will be rendered on the top of the slide.
+---
+# This is a comment and will be ingored.
+# Those three dashes (---) starts a new slide.
+.ordlist 
+Lists can be ordered, producing numbered items.
+In this case, three!
+Next slide, an image and then a video...
+---
+.image
+example.jpg
+One caption to this image:
+Line breaks are permitted!
+# The image above should be in the same directory or be
+# pointed with full path like:
+# /your/path/example.jpg
+---
+.video
+example.mp4
+# The .video tag will insert the example.mp4 video on the same directory.
+---
+.subheading 
+Mermaid diagrams can be inserted also!
+.mermaid
+graph TD;
+a(A) --&gt; b(B);
+c(C) --&gt; d(D);
+a --&gt; c;
+b --&gt; c;
+---
+.heading 
+A title for the slide
+.subheading 
+A subtitle: let&#39;s make a table!
+.table 
+1st column | 2nd | 3rd 
+2nd line | middle collumn | last
+.text
+The next slide is a blank one.
+---
+---
+.image
+example.jpg
+.draft
+# This slide contains an image but will not be rendered, since it&#39;s marked as draft.
+.footer 
+A foot note to be shown in all slides.
+# Footer text can be inserted at any slide, even on draft ones.
+---
+# &#34;Actually&#34;, configs can be passed at any time, like the logo below:
+.logo
+logo.png
+.text
+The end.
+</code></pre><p>Then, run:</p>
+<pre tabindex="0"><code>$ sxpres --input example.stv
+</code></pre><p>A <code>example.html</code> file will appear. Open it with some browser. See the hosted version <a href="../sxpres-doc/example.html">here</a>.</p>
+<h3 id="controls">Controls</h3>
+<p>Controls are keept simple and vim-like inspired.</p>
+<pre tabindex="0"><code>t   :   Open and close the help pop-up.
+j   :   Next slide.
+k   :   Previous slide.
+p   :   Printable mode. 
+gg  :   Go to 1st slide.
+G   :   Go to last slide.
+m   :   Show round pointer.
+x   :   Change pointer size..
+</code></pre><p>In screen devices, swipe to go trhought slides.</p>
+<h2 id="where-is-it">Where is it?</h2>
+<p>In my <a href="https://github.com/fatiservae/sxpres">GitHub</a> page.</p>
 <h2 id="documentation">Documentation</h2>
-<p>Se the <a href="../sxpres-doc/sxpres/index.html">rust style documentation here</a>.</p>
+<p>See the <a href="../sxpres-doc/sxpres/index.html">rust style documentation here</a>.</p>
     
     
     <br>

@@ -8,24 +8,22 @@
   --stdTransition: background-color 0.2s ease;
   text-align: center;
   /* Manter --fonte para compatibildiade dos temas antigos e SVGs */
-  --fonte: var(--fontColor); 
+  --fonte: var(--fontColor);
   --vidro: rgba(6, 6, 4, .2);
   --borders: 1px solid var(--fontColor);
   --borderRadius: 8px;
   --stdBorder: 1px solid var(--fontColor);
   color: var(--fontColor);
-  font-family: 'Sans';
+  font-family: 'Fira Sans';
   font-weight: 400;
   font-size: 1rem;
   background-color: var(--backgroundColor);
-  --gradiente: radial-gradient(
-                      ellipse at 50% 50%, 
-                      #bf398910 0, 
-                      transparent 75%), 
-                    radial-gradient(
-                      ellipse at 50% 50%, 
-                      #bf398910 0, 
-                      transparent 75%); 
+  --gradiente: radial-gradient(ellipse at 50% 50%,
+      #bf398910 0,
+      transparent 75%),
+    radial-gradient(ellipse at 50% 50%,
+      #bf398910 0,
+      transparent 75%);
   --dimmedFontColor: #777;
   --hoverBackground: #282828;
   --headingsColor: tomato;
@@ -33,7 +31,7 @@
   --linkColor: skyblue;
   --linkColorHover: white;
   --corTermo: tomato;
-  --selectionColor: #ecc ;
+  --selectionColor: #ecc;
   --fontSelectionColor: black;
   --highLightColor: springgreen;
   --backgroundColor: #282828;
@@ -80,11 +78,11 @@ body {
   */
   margin-top: 2ch;
   align-items: center;
-  margin: 2ch calc(25% - 130px); /* quero ver mais elegante */
+  margin: 2ch calc(25% - 130px);
+  /* quero ver mais elegante */
 }
 
-p {
-}
+p {}
 
 strong {
   color: white;
@@ -100,13 +98,15 @@ footer {
   font-size: 60%;
 }
 
-button, select{
-  color: var(--backgroundColor); 
-  background-color: var(--headingsColor) ;
+button,
+select {
+  color: var(--backgroundColor);
+  background-color: var(--headingsColor);
   border-radius: var(--borderRadius);
-  border: 1px solid var(--stdBorder); 
+  border: 1px solid var(--stdBorder);
   padding: 0.5ch;
 }
+
 button:active {
   background-color: var(--fontColor);
 }
@@ -118,6 +118,7 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
@@ -127,7 +128,8 @@ a {
   text-decoration: none;
   color: var(--linkColor);
 }
-a:hover{
+
+a:hover {
   /*
   text-decoration: underline;
   */
@@ -140,19 +142,23 @@ a:hover{
   margin-left: 0px;
   padding-left: 0px;
 }
+
 #files li {
   padding-left: 10px;
 }
+
 #files li::marker {
   content: none;
 }
-#files li:hover{
+
+#files li:hover {
   padding: 10px;
   width: fit-content;
   background-color: var(--vidro);
   border-radius: var(--borderRadius);
 }
-#search-output li::marker{
+
+#search-output li::marker {
   content: none;
 }
 
@@ -160,11 +166,13 @@ a:hover{
   width: 100%;
 }
 
-ul, li{
+ul,
+li {
   font-style: normal;
   padding-left: 0px;
   margin-left: 0px;
 }
+
 #artlist li {
   margin-left: 0px;
   padding-left: 0px;
@@ -178,22 +186,25 @@ ul, li{
   border: 1px solid var(--borderColor);
   border-radius: var(--borderRadius);
 }
+
 .calculadoras input {
   max-width: 10ch;
 }
-.calculadoras p{
+
+.calculadoras p {
   font-size: 85%;
 }
 
 #eu {
   text-align: center;
 }
+
 #eu img {
-  border-radius: 100%; 
+  border-radius: 100%;
   max-height: 30vh;
 }
 
-#autor{
+#autor {
   /*
   */
   margin: auto;
@@ -201,36 +212,47 @@ ul, li{
   white-space: nowrap;
   font-weight: normal;
 }
-#autor, #frase{
+
+#autor,
+#frase {
   /*
   */
-  max-width: 60vw ;
-  width: fit-content ;
-  text-align: center ;
+  max-width: 60vw;
+  width: fit-content;
+  text-align: center;
 }
+
 #boasvindas {
   padding: 0;
   text-align: start;
   font-size: 200%;
 }
+
 /* Questionável ... */
-#maquinaescrever{
+#maquinaescrever {
   margin-top: 3vw;
 }
-span#frase{
+
+span#frase {
   border-right: 10px solid var(--borderColor);
   animation: blinkTextCursor 800ms steps(44) infinite normal;
   border-right: 10px solid var(--borderColor);
   border-radius: 0px;
   animation: blinkTextCursor 800ms steps(44) infinite normal;
 }
-@keyframes blinkTextCursor{
-  from{border-right-color: var(--fontColor);}
-  to{border-right-color: transparent;}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: var(--fontColor);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
 }
 
 
-#frase{
+#frase {
   /*
   margin-left: var(--margem);
   transition: filter 2.5s ease-in-out, color 4s ease-in-out ;
@@ -238,22 +260,24 @@ span#frase{
   filter: blur(5px);
   */
   font-size: 95%;
-  font-style: italic ;
-  align: center ;
-  text-align: center ;
-  color: var(--corFonte) ;
-  padding-left: auto ;
-  padding-right: auto ;
-  border-radius: 5px ;
+  font-style: italic;
+  align: center;
+  text-align: center;
+  color: var(--corFonte);
+  padding-left: auto;
+  padding-right: auto;
+  border-radius: 5px;
 }
+
 #frase.show {
   /*
   filter: none;
   color: var(--fraseShow);
   */
 }
+
 #frase:hover {
-  color: var(--fraseHover); 
+  color: var(--fraseHover);
 }
 
 nav.barra {
@@ -261,8 +285,8 @@ nav.barra {
   font-size: 120%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   /* padding: 1vw; Necessário para boa acomodação em telas menores */
   /*
   font-style: bold;
@@ -282,10 +306,11 @@ nav.barra {
   */
 }
 
-nav.barra{
+nav.barra {
   height: fit-content;
   padding: 0px;
 }
+
 nav a {
   margin: 0px;
   color: var(--headingsColor);
@@ -294,21 +319,26 @@ nav a {
   transition: var(--stdTransition);
   font-weight: bold;
 }
+
 nav.barra a:active,
-nav.barra a:hover{
+nav.barra a:hover {
   /*
   background-color: var(--hoverBackground);
   */
-  color: var(--fontColor); /* Para evitar ser sobreposto por a{}*/
+  color: var(--fontColor);
+  /* Para evitar ser sobreposto por a{}*/
   text-decoration: none;
 }
+
 .divGlobalSearch {
   display: flex;
   align-content: center;
 }
+
 nav.barra img {
   max-height: 6ch;
 }
+
 .home {
   border: 1px solid var(--borderColor);
   background: var(--vidro);
@@ -316,6 +346,7 @@ nav.barra img {
   padding: 5px;
   /* background: var(--headingsColor); */
 }
+
 .home a {
   /* color: var(--backgroundColor); */
   padding: 2px 8px;
@@ -330,8 +361,9 @@ mark {
   display: inline;
   z-index: +1;
 }
+
 mark::before,
-mark::after{
+mark::after {
   background-color: var(--highLightColor);
   content: "";
   position: absolute;
@@ -343,7 +375,7 @@ mark::after{
   transform: rotate(-4deg);
 }
 
-input{
+input {
   /*
   */
   color: var(--fontColor);
@@ -351,7 +383,7 @@ input{
   outline: none;
   text-indent: 5px;
   background: none;
-  height: 2em ;
+  height: 2em;
   text-align: start;
   background-color: var(--hoverBackground);
   border: 1px solid var(--borderColor);
@@ -359,180 +391,639 @@ input{
   background-color: var(--hoverBackground);
 
 }
-input:focus{
-}
+
+input:focus {}
+
 input::placeholder {
   color: var(--dimmedFontColor);
-}
-
-code {
-  font-size: 95%;
-  white-space: break-spaces;
 }
 
 [id^="tag_"] {
   white-space: nowrap;
 }
-#tag_culinária::before { content: "🍸🍕 " ;}
-#tag_apresentações::before { content: "📽️ " ;}
-#tag_receitas::before { content: "🍅🍲 " ;}
-#tag_linux::before { content: "🐧 " ;}
-#tag_tecnologia::before { content: "📡💻 " ;}
-#tag_mecânica::before { content: "🔧⚙️ " ;}
-#tag_automobilismo::before { content: "🏎️💨 " ;}
-#tag_carros::before { content: "🚗 " ;}
-#tag_projetos::before { content: "👷🏽‍♂️🚧 " ;}
-#tag_arqueologia::before { content: "🗿 " ;}
-#tag_programação::before { content: "🧑🏽‍💻 " ;}
-#tag_rust::before { content: "🚀 " ;}
-#tag_filosofia::before { content: "🧠💭 " ;}
-#tag_nefrologia::before { content: "🥔 " ;}
-#tag_cardiologia::before { content: "❤️ " ;}
-#tag_pneumologia::before { content: "🫁 " ;}
-#tag_endocrinologia::before { content: "📊🩸 " ;}
-#tag_ciência::before { content: "🧪👨🏽‍🔬 " ;}
-#tag_emergências::before { content: "🚨 " ;}
-#tag_emergência::before { content: "🚨 " ;}
-#tag_calculadoras::before { content: "🔢 " ;}
-#tag_guias::before { content: "🔀 " ;}
-#tag_medicina::before { content: "🩺💉 " ;}
-#tag_dor::before { content: "💢😖 " ;}
-#tag_geopolítica::before{ content: "🌍 " ;}
-#tag_biologia::before{ content: "🌱 " ;}
-#tag_estoicismo::before { content: "🗿 " ;}
-#tag_anestesia::before { content: "💉😴 " ;}
-#tag_trauma::before { content: "🤕 " ;}
-#tag_imunologia::before { content: "💉🔬 " ;}
-#tag_urologia::before { content: "💧♂️ " ;}
-#tag_epidemiologia::before { content: "😷 " ;}
-#tag_dermatologia::before { content: "🤲 " ;}
-#tag_sus::before { content: "🏥 " ;}
-#tag_história::before { content: "⌛ " ;}
-#tag_política::before { content: "🏛️ " ;}
-#tag_neurologia::before { content: "🧠 " ;}
-#tag_cirurgia::before { content: "🔪🩸 " ;}
-#tag_radiologia::before { content: "🩻 " ;}
-#tag_sociologia::before { content: "👩🏻‍💼 " ;}
-#tag_ginecologia::before { content: "♀ " ;}
-#tag_documentos::before { content: "📄 " ;}
-#tag_ferramentas::before { content: "🔧 " ;}
-#tag_obstetrícia::before { content: "🤰 " ;}
-#tag_perícias::before { content: "🕵️ " ;}
-#tag_direito::before { content: "⚖️ " ;}
-#tag_penal::before { content: "👮 " ;}
-#tag_nutrição::before { content: "💪 " ;}
-#tag_infectologia::before { content: "🦠 " ;}
-#tag_arboviroses::before { content: "🦟 " ;}
-#tag_tabelas::before { content: "🔡 " ;}
-#tag_resumos::before { content: "📝 " ;}
-#tag_psicologia::before { content: "🎭 " ;}
-#tag_filosofia::before { content: "🤔 " ;}
-#tag_farmacologia::before { content: "🧪💊 " ;}
-#tag_natureza::before { content: "🐞🌻 " ;}
-#tag_pediatria::before { content: "👶 " ;}
-#tag_obstetricia::before { content: "🤰 " ;}
-#tag_inteligência::before { content: "🌐 " ;}
-#tag_guidelines::before { content: "🚩 " ;}
-#tag_viagem::before { content: "🏖️ " ;}
-#tag_destinos::before { content: "🧳 " ;}
-#tag_alcohol::before { content: "🍸 " ;}
-#tag_american::before { content: "🇺🇸 " ; }
-[id*="tag_estados"]::before { content: "🇺🇸 " ; }
-#tag_apple::before { content: "🍎 " ; }
-#tag_argentinian::before { content: "🇦🇷 " ; }
-#tag_asian::before { content: "🥢 " ; }
-#tag_australian::before { content: "🇦🇺 " ;}
-#tag_austrian::before { content: "🇦🇹 " ;}
-#tag_bacon::before { content: "🥓 " ; }
-#tag_beans::before { content: "🫘 " ; }
-#tag_beef::before { content: "🐄 " ; }
-#tag_belgian::before { content: "🇧🇪 " ; }
-#tag_brasil::before { content: "🇧🇷 " ; }
-#tag_bread::before { content: "🍞 " ;}
-#tag_breakfast::before { content: "🌅 " ;}
-#tag_broccoli::before { content: "🥦 " ;}
-#tag_cake::before { content: "🍰 " ; }
-#tag_cheese::before { content: "🧀 " ; }
-#tag_chicken::before { content: "🐔 " ;}
-#tag_chinese::before { content: "🐉 " ; }
-#tag_chocolate::before { content: "🍫 " ; }
-#tag_christmas::before { content: "🎄 " ; }
-#tag_cookies::before { content: "🍪 " ;}
-#tag_corn::before { content: "🌽 " ;}
-#tag_curry::before { content: "🍛 " ; }
-#tag_dessert::before { content: "🍮 " ; }
-#tag_dominican::before { content: "🇩🇴 " ;}
-#tag_drink::before { content: "🍹 " ;}
-#tag_duck::before { content: "🦆 " ; }
-#tag_dumpling::before { content: "🥟 " ;}
-#tag_dutch::before { content: "🇳🇱 " ;}
-#tag_easter::before { content: "✝️ " ; }
-#tag_eggs::before { content: "🥚 " ; }
-#tag_english::before { content: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 " ; }
-#tag_fasting::before { content: "☦️ " ; }
-#tag_filipino::before { content: "🇵🇭 " ; }
-#tag_fish::before { content: "🐟 " ; }
-#tag_french::before { content: "🇫🇷 " ; }
-#tag_fruit::before { content: "🍇 " ; }
-#tag_german::before { content: "🇩🇪 " ; }
-#tag_greek::before { content: "🇬🇷 " ; }
-#tag_indian::before { content: "🇮🇳 " ; }
-#tag_irish::before { content: "🇮🇪 " ; }
-#tag_israeli::before { content: "🇮🇱 " ; }
-#tag_italian::before { content: "🇮🇹 " ; }
-#tag_japanese::before { content: "🇯🇵 " ; }
-#tag_lebanese::before { content: "🇱🇧 " ; }
-#tag_lemons::before { content: "🍋 " ;}
-#tag_liquour::before { content: "🥃 " ;}
-#tag_lunch::before { content: "🍱 " ; }
-#tag_mediterranean::before { content: "🫒 " ; }
-#tag_méxico::before { content: "🇲🇽 " ; }
-#tag_milk::before { content: "🥛 " ; }
-#tag_mushrooms::before { content: "🍄 " ;}
-#tag_pancake::before { content: "🥞 " ; }
-#tag_pasta::before { content: "🍝 " ;}
-#tag_pastry::before { content: "🧁 " ;}
-#tag_peruvian::before { content: "🇵🇪 " ;}
-#tag_pie::before { content: "🥧 " ;}
-#tag_pizza::before { content: "🍕 " ; }
-#tag_polish::before { content: "🇵🇱 " ;}
-#tag_pork::before { content: "🐖 " ;}
-#tag_portuguese::before { content: "🇵🇹 " ;}
-#tag_potato::before { content: "🥔 " ; }
-#tag_quebec::before { content: "⚜️ " ; }
-#tag_quick::before { content: "🏃 " ; }
-#tag_raw::before { content: "🍖 " ;}
-#tag_rice::before { content: "🍚 " ; }
-#tag_russian::before { content: "🇷🇺 " ;}
-#tag_salad::before { content: "🥗 " ;}
-#tag_sandwich::before { content: "🥪 " ;}
-#tag_seafood::before { content: "🦐 " ; }
-#tag_soup::before { content: "🍜 " ;}
-#tag_sourdough::before { content: "🥖 " ;}
-#tag_southwest::before { content: "🤠 " ; }
-#tag_spanish::before { content: "🇪🇸 " ; }
-#tag_spice::before { content: "🧂 " ; }
-#tag_spicy::before { content: "🌶️ " ; }
-#tag_spread::before { content: "🧈 " ; }
-#tag_steak::before { content: "🥩 " ; }
-#tag_stew::before { content: "🍲 " ; }
-#tag_swedish::before { content: "🇸🇪 " ; }
-#tag_sweet::before { content: "🍯 " ; }
-#tag_swiss::before { content: "🇨🇭 " ; }
-#tag_thai::before { content: "🇹🇭 " ;}
-#tag_tomato::before { content: "🍅 " ;}
-#tag_tunisian::before { content: "🇹🇳 " ; }
-#tag_turkey::before { content: "🦃 " ; }
-#tag_turkish::before { content: "🇹🇷 " ; }
-#tag_ukrainian::before { content: "🇺🇦 " ; }
-#tag_vietnamese::before { content: "🇻🇳 " ; }
-#tag_wine::before { content: "🍷 " ; }
+
+#tag_culinária::before {
+  content: "🍸🍕 ";
+}
+
+#tag_apresentações::before {
+  content: "📽️ ";
+}
+
+#tag_receitas::before {
+  content: "🍅🍲 ";
+}
+
+#tag_linux::before {
+  content: "🐧 ";
+}
+
+#tag_tecnologia::before {
+  content: "📡💻 ";
+}
+
+#tag_mecânica::before {
+  content: "🔧⚙️ ";
+}
+
+#tag_automobilismo::before {
+  content: "🏎️💨 ";
+}
+
+#tag_carros::before {
+  content: "🚗 ";
+}
+
+#tag_projetos::before {
+  content: "👷🏽‍♂️🚧 ";
+}
+
+#tag_arqueologia::before {
+  content: "🗿 ";
+}
+
+#tag_programação::before {
+  content: "🧑🏽‍💻 ";
+}
+
+#tag_rust::before {
+  content: "🚀 ";
+}
+
+#tag_filosofia::before {
+  content: "🧠💭 ";
+}
+
+#tag_nefrologia::before {
+  content: "🥔 ";
+}
+
+#tag_cardiologia::before {
+  content: "❤️ ";
+}
+
+#tag_pneumologia::before {
+  content: "🫁 ";
+}
+
+#tag_endocrinologia::before {
+  content: "📊🩸 ";
+}
+
+#tag_ciência::before {
+  content: "🧪👨🏽‍🔬 ";
+}
+
+#tag_emergências::before {
+  content: "🚨 ";
+}
+
+#tag_emergência::before {
+  content: "🚨 ";
+}
+
+#tag_calculadoras::before {
+  content: "🔢 ";
+}
+
+#tag_guias::before {
+  content: "🔀 ";
+}
+
+#tag_medicina::before {
+  content: "🩺💉 ";
+}
+
+#tag_dor::before {
+  content: "💢😖 ";
+}
+
+#tag_geopolítica::before {
+  content: "🌍 ";
+}
+
+#tag_biologia::before {
+  content: "🌱 ";
+}
+
+#tag_estoicismo::before {
+  content: "🗿 ";
+}
+
+#tag_anestesia::before {
+  content: "💉😴 ";
+}
+
+#tag_trauma::before {
+  content: "🤕 ";
+}
+
+#tag_imunologia::before {
+  content: "💉🔬 ";
+}
+
+#tag_urologia::before {
+  content: "💧♂️ ";
+}
+
+#tag_epidemiologia::before {
+  content: "😷 ";
+}
+
+#tag_dermatologia::before {
+  content: "🤲 ";
+}
+
+#tag_sus::before {
+  content: "🏥 ";
+}
+
+#tag_história::before {
+  content: "⌛ ";
+}
+
+#tag_política::before {
+  content: "🏛️ ";
+}
+
+#tag_neurologia::before {
+  content: "🧠 ";
+}
+
+#tag_cirurgia::before {
+  content: "🔪🩸 ";
+}
+
+#tag_radiologia::before {
+  content: "🩻 ";
+}
+
+#tag_sociologia::before {
+  content: "👩🏻‍💼 ";
+}
+
+#tag_ginecologia::before {
+  content: "♀ ";
+}
+
+#tag_documentos::before {
+  content: "📄 ";
+}
+
+#tag_ferramentas::before {
+  content: "🔧 ";
+}
+
+#tag_obstetrícia::before {
+  content: "🤰 ";
+}
+
+#tag_perícias::before {
+  content: "🕵️ ";
+}
+
+#tag_direito::before {
+  content: "⚖️ ";
+}
+
+#tag_penal::before {
+  content: "👮 ";
+}
+
+#tag_nutrição::before {
+  content: "💪 ";
+}
+
+#tag_infectologia::before {
+  content: "🦠 ";
+}
+
+#tag_arboviroses::before {
+  content: "🦟 ";
+}
+
+#tag_tabelas::before {
+  content: "🔡 ";
+}
+
+#tag_resumos::before {
+  content: "📝 ";
+}
+
+#tag_psicologia::before {
+  content: "🎭 ";
+}
+
+#tag_filosofia::before {
+  content: "🤔 ";
+}
+
+#tag_farmacologia::before {
+  content: "🧪💊 ";
+}
+
+#tag_natureza::before {
+  content: "🐞🌻 ";
+}
+
+#tag_pediatria::before {
+  content: "👶 ";
+}
+
+#tag_obstetricia::before {
+  content: "🤰 ";
+}
+
+#tag_inteligência::before {
+  content: "🌐 ";
+}
+
+#tag_guidelines::before {
+  content: "🚩 ";
+}
+
+#tag_viagem::before {
+  content: "🏖️ ";
+}
+
+#tag_destinos::before {
+  content: "🧳 ";
+}
+
+#tag_alcohol::before {
+  content: "🍸 ";
+}
+
+#tag_american::before {
+  content: "🇺🇸 ";
+}
+
+[id*="tag_estados"]::before {
+  content: "🇺🇸 ";
+}
+
+#tag_apple::before {
+  content: "🍎 ";
+}
+
+#tag_argentinian::before {
+  content: "🇦🇷 ";
+}
+
+#tag_asian::before {
+  content: "🥢 ";
+}
+
+#tag_australian::before {
+  content: "🇦🇺 ";
+}
+
+#tag_austrian::before {
+  content: "🇦🇹 ";
+}
+
+#tag_bacon::before {
+  content: "🥓 ";
+}
+
+#tag_beans::before {
+  content: "🫘 ";
+}
+
+#tag_beef::before {
+  content: "🐄 ";
+}
+
+#tag_belgian::before {
+  content: "🇧🇪 ";
+}
+
+#tag_brasil::before {
+  content: "🇧🇷 ";
+}
+
+#tag_bread::before {
+  content: "🍞 ";
+}
+
+#tag_breakfast::before {
+  content: "🌅 ";
+}
+
+#tag_broccoli::before {
+  content: "🥦 ";
+}
+
+#tag_cake::before {
+  content: "🍰 ";
+}
+
+#tag_cheese::before {
+  content: "🧀 ";
+}
+
+#tag_chicken::before {
+  content: "🐔 ";
+}
+
+#tag_chinese::before {
+  content: "🐉 ";
+}
+
+#tag_chocolate::before {
+  content: "🍫 ";
+}
+
+#tag_christmas::before {
+  content: "🎄 ";
+}
+
+#tag_cookies::before {
+  content: "🍪 ";
+}
+
+#tag_corn::before {
+  content: "🌽 ";
+}
+
+#tag_curry::before {
+  content: "🍛 ";
+}
+
+#tag_dessert::before {
+  content: "🍮 ";
+}
+
+#tag_dominican::before {
+  content: "🇩🇴 ";
+}
+
+#tag_drink::before {
+  content: "🍹 ";
+}
+
+#tag_duck::before {
+  content: "🦆 ";
+}
+
+#tag_dumpling::before {
+  content: "🥟 ";
+}
+
+#tag_dutch::before {
+  content: "🇳🇱 ";
+}
+
+#tag_easter::before {
+  content: "✝️ ";
+}
+
+#tag_eggs::before {
+  content: "🥚 ";
+}
+
+#tag_english::before {
+  content: "🏴󠁧󠁢󠁥󠁮󠁧󠁿 ";
+}
+
+#tag_fasting::before {
+  content: "☦️ ";
+}
+
+#tag_filipino::before {
+  content: "🇵🇭 ";
+}
+
+#tag_fish::before {
+  content: "🐟 ";
+}
+
+#tag_french::before {
+  content: "🇫🇷 ";
+}
+
+#tag_fruit::before {
+  content: "🍇 ";
+}
+
+#tag_german::before {
+  content: "🇩🇪 ";
+}
+
+#tag_greek::before {
+  content: "🇬🇷 ";
+}
+
+#tag_indian::before {
+  content: "🇮🇳 ";
+}
+
+#tag_irish::before {
+  content: "🇮🇪 ";
+}
+
+#tag_israeli::before {
+  content: "🇮🇱 ";
+}
+
+#tag_italian::before {
+  content: "🇮🇹 ";
+}
+
+#tag_japanese::before {
+  content: "🇯🇵 ";
+}
+
+#tag_lebanese::before {
+  content: "🇱🇧 ";
+}
+
+#tag_lemons::before {
+  content: "🍋 ";
+}
+
+#tag_liquour::before {
+  content: "🥃 ";
+}
+
+#tag_lunch::before {
+  content: "🍱 ";
+}
+
+#tag_mediterranean::before {
+  content: "🫒 ";
+}
+
+#tag_méxico::before {
+  content: "🇲🇽 ";
+}
+
+#tag_milk::before {
+  content: "🥛 ";
+}
+
+#tag_mushrooms::before {
+  content: "🍄 ";
+}
+
+#tag_pancake::before {
+  content: "🥞 ";
+}
+
+#tag_pasta::before {
+  content: "🍝 ";
+}
+
+#tag_pastry::before {
+  content: "🧁 ";
+}
+
+#tag_peruvian::before {
+  content: "🇵🇪 ";
+}
+
+#tag_pie::before {
+  content: "🥧 ";
+}
+
+#tag_pizza::before {
+  content: "🍕 ";
+}
+
+#tag_polish::before {
+  content: "🇵🇱 ";
+}
+
+#tag_pork::before {
+  content: "🐖 ";
+}
+
+#tag_portuguese::before {
+  content: "🇵🇹 ";
+}
+
+#tag_potato::before {
+  content: "🥔 ";
+}
+
+#tag_quebec::before {
+  content: "⚜️ ";
+}
+
+#tag_quick::before {
+  content: "🏃 ";
+}
+
+#tag_raw::before {
+  content: "🍖 ";
+}
+
+#tag_rice::before {
+  content: "🍚 ";
+}
+
+#tag_russian::before {
+  content: "🇷🇺 ";
+}
+
+#tag_salad::before {
+  content: "🥗 ";
+}
+
+#tag_sandwich::before {
+  content: "🥪 ";
+}
+
+#tag_seafood::before {
+  content: "🦐 ";
+}
+
+#tag_soup::before {
+  content: "🍜 ";
+}
+
+#tag_sourdough::before {
+  content: "🥖 ";
+}
+
+#tag_southwest::before {
+  content: "🤠 ";
+}
+
+#tag_spanish::before {
+  content: "🇪🇸 ";
+}
+
+#tag_spice::before {
+  content: "🧂 ";
+}
+
+#tag_spicy::before {
+  content: "🌶️ ";
+}
+
+#tag_spread::before {
+  content: "🧈 ";
+}
+
+#tag_steak::before {
+  content: "🥩 ";
+}
+
+#tag_stew::before {
+  content: "🍲 ";
+}
+
+#tag_swedish::before {
+  content: "🇸🇪 ";
+}
+
+#tag_sweet::before {
+  content: "🍯 ";
+}
+
+#tag_swiss::before {
+  content: "🇨🇭 ";
+}
+
+#tag_thai::before {
+  content: "🇹🇭 ";
+}
+
+#tag_tomato::before {
+  content: "🍅 ";
+}
+
+#tag_tunisian::before {
+  content: "🇹🇳 ";
+}
+
+#tag_turkey::before {
+  content: "🦃 ";
+}
+
+#tag_turkish::before {
+  content: "🇹🇷 ";
+}
+
+#tag_ukrainian::before {
+  content: "🇺🇦 ";
+}
+
+#tag_vietnamese::before {
+  content: "🇻🇳 ";
+}
+
+#tag_wine::before {
+  content: "🍷 ";
+}
 
 img {
   max-height: 40vw;
   border-radius: 4px;
   max-width: 95%;
 }
+
 figcaption {
   font-size: 90%;
   font-style: italic;
@@ -542,6 +1033,7 @@ figcaption {
   padding: 0px;
   margin: 0px;
 }
+
 #img-div p {
   margin: 0px;
   padding: 0px;
@@ -549,10 +1041,10 @@ figcaption {
 }
 
 .fundo-only-big {
-  position: fixed; 
+  position: fixed;
   width: 15em;
-  right: 1em; 
-  bottom: 1em; 
+  right: 1em;
+  bottom: 1em;
   z-index: -1;
 }
 
@@ -564,73 +1056,81 @@ figcaption {
   border-radius: var(--borderRadius);
   border: 1px solid var(--fontColor);
 }
-.slide {
-}
-.slide img{
+
+.slide {}
+
+.slide img {
   margin-left: 2vw;
   margin-bottom: 0vw;
-  max-height: 60vh; 
+  max-height: 60vh;
 }
-div.slide a img {
-}
-.slide ul {
-}
-.slide li {
-}
+
+div.slide a img {}
+
+.slide ul {}
+
+.slide li {}
+
 .button-container {
   margin-left: 0.5rem;
 }
-.conteudo div.slide {
-}
-.conteudo div.legend {
-}
-button[id^="proximo"] {
-}
-button[id^="anterior"] {
-}
-button[id^="proximo"], button[id^="anterior"] {
-}
+
+.conteudo div.slide {}
+
+.conteudo div.legend {}
+
+button[id^="proximo"] {}
+
+button[id^="anterior"] {}
+
+button[id^="proximo"],
+button[id^="anterior"] {}
+
 button[id^="anterior"] {
   padding-right: none;
 }
+
 button[id^="proximo"] {
   margin-left: .5rem;
 }
-button[id^="proximo"]:hover , 
-button[id^="anterior"]:hover {
-}
-button[id^="proximo"]:active, 
-button[id^="anterior"]:active{
-}
-.carousel.slide { 
-}
-.carousel.slide iframe {
-}
-.carousel.slide a{
-}
-.carousel.slide a[href]{
-}
+
+button[id^="proximo"]:hover,
+button[id^="anterior"]:hover {}
+
+button[id^="proximo"]:active,
+button[id^="anterior"]:active {}
+
+.carousel.slide {}
+
+.carousel.slide iframe {}
+
+.carousel.slide a {}
+
+.carousel.slide a[href] {}
+
 .conteudo .legend {
   margin-left: 0.5rem;
   font-size: 100%;
-  color: var(--font); 
+  color: var(--font);
   font-style: italic;
 }
-.legend {
-}
-.legend p{
-}
-.carousel.slide a[href] img {
-}
+
+.legend {}
+
+.legend p {}
+
+.carousel.slide a[href] img {}
 
 pre {
   white-space: space;
 }
+
 pre.mermaid {
   width: 93%;
   border: none;
   background: none;
 }
+
 .mermaid svg {
   align: center
 }
@@ -662,9 +1162,9 @@ table {
   margin-right: 5vw;
   max-width: 70vw;
 }
+
 table th:not(:last-child),
-table td:not(:last-child) {
-}
+table td:not(:last-child) {}
 
 table>thead>tr:not(:last-child)>th,
 table>thead>tr:not(:last-child)>td,
@@ -676,20 +1176,24 @@ table>tr:not(:last-child)>td,
 table>tr:not(:last-child)>th,
 table>thead:not(:last-child),
 table>tbody:not(:last-child),
-table>tfoot:not(:last-child){
+table>tfoot:not(:last-child) {
   border-bottom: var(--stdBorder);
 }
-tbody tr{
-}
-tr td{
+
+tbody tr {}
+
+tr td {
   border-bottom: var(--stdBorder);
 }
+
 th {
   background-color: var(--darkerBg);
   border-top: var(--stdBorder);
   border-bottom: var(--stdBorder);
 }
-th, td {
+
+th,
+td {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   border-right: var(--stdBorder);
@@ -698,65 +1202,121 @@ th, td {
 #TableOfContents li::marker {
   content: none;
 }
-#TableOfContents li:hover{
-}
+
+#TableOfContents li:hover {}
+
 #TableOfContents li:hover::marker {
   font-weight: bold;
   content: ">";
 }
-#TableOfContents li li a{
+
+#TableOfContents li li a {
   padding-left: 1rem;
 }
 
-pre, blockquote {
+pre,
+blockquote {
   width: fit-content;
+  max-width: 90vw;
   padding: 2ch;
   padding-left: 1ch;
   font-style: italic;
   margin: 2ch;
-  background: var(--gradiente);
+  background: #202020;
   margin-left: 0px;
 }
+
+pre {
+  border-radius: var(--borderRadius);
+}
+
+code {
+  color: gold;
+  font-size: 95%;
+  white-space: break-spaces;
+  font-family: 'mono';
+  font-style: normal;
+  background: #202020;
+  border-radius: var(--borderRadius);
+  max-width: 80vw;
+}
+
 p code {
-  border: none;
+  padding: 1ch;
 }
 
 @keyframes blinkEmConstrucao {
-  0% { color: black };
-  50% { color: pink };
-  100% { color: red };
+  0% {
+    color: black
+  }
+
+  ;
+
+  50% {
+    color: pink
+  }
+
+  ;
+
+  100% {
+    color: red
+  }
+
+  ;
 }
+
 .emConstrucao {
   font-weight: bold;
   animation: blinkEmConstrucao 2s infinite;
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding: 0px;
   margin: 1.5ch;
   margin-left: 0px;
   font-weight: bold;
   color: var(--headingsColor);
 }
-h1, h2 {
+
+h1,
+h2 {
   font-size: 110%;
 }
-h3, h4, h5, h6 {
+
+h3,
+h4,
+h5,
+h6 {
   font-size: 100%;
   font-weight: 400;
 }
-h4, h5, h6 {
+
+h4,
+h5,
+h6 {
   font-weight: 300;
 }
-h3::before, h4::before, h5::before, h6::before {
+
+h3::before,
+h4::before,
+h5::before,
+h6::before {
   content: "\00a0 \00a0";
 }
-h4::before, h5::before, h6::before {
+
+h4::before,
+h5::before,
+h6::before {
   content: "\00a0 \00a0 \00a0 \00a0";
 }
-#greeting {
-}
+
+#greeting {}
 
 .primeiraMaiuscula::first-letter {
   text-transform: uppercase;
@@ -766,6 +1326,7 @@ h4::before, h5::before, h6::before {
   background-color: transparent;
   border: none;
 }
+
 /* Para Katex, veja o shortcode com css integrado. */
 .mermaid svg {
   align: center
@@ -774,7 +1335,8 @@ h4::before, h5::before, h6::before {
 .scalidraw {
   display: flex;
 }
-.scalidraw svg{
+
+.scalidraw svg {
   margin-left: var(--margem);
   margin-bottom: 0%;
   padding: 0%;
@@ -788,29 +1350,31 @@ h4::before, h5::before, h6::before {
   display: flex;
   justify-content: flex-start;
 }
-.duploflex div{
+
+.duploflex div {
   max-width: 40%;
 }
+
 .duploflex img {
   width: 50%;
 }
-div.duploflex p{
-}
+
+div.duploflex p {}
 
 hr {
   width: 25%;
   align: start;
 }
 
-#nomeTema:hover{
+#nomeTema:hover {
   background: none;
 }
+
 .material-icons {
   vertical-align: middle;
 }
 
-.etiqueta {
-}
+.etiqueta {}
 
 div#artigos {
   display: flex;
@@ -818,7 +1382,8 @@ div#artigos {
   align-items: center;
   text-align: center;
 }
-div#artigos #artigo{
+
+div#artigos #artigo {
   flex: 1 1 200px;
   max-width: 20vw;
   min-width: 200px;
@@ -830,13 +1395,15 @@ div#artigos #artigo{
   padding: 1rem;
   border-radius: var(--borderRadius);
 }
+
 div#artigos #artigo img {
   max-height: 150px;
 }
-div#artigos #artigo p ,
-div#artigos #artigo h2 ,
-div#artigos #artigo h3 ,
-div#artigos #artigo h4 ,
+
+div#artigos #artigo p,
+div#artigos #artigo h2,
+div#artigos #artigo h3,
+div#artigos #artigo h4,
 div#artigos #artigo h5 {
   text-align: start;
   color: var(--fontColor);
@@ -849,42 +1416,51 @@ div#artigos-lista-simples {
 }
 
 /* Mediaqueries */
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px) {
   img {
     max-height: 80vw;
   }
+
   div#artigos {
     display: block;
   }
-  div#artigos #artigo{
+
+  div#artigos #artigo {
     max-width: none;
   }
 }
-@media only screen and (max-width: 900px){
+
+@media only screen and (max-width: 900px) {
   .duploflex {
     display: block;
   }
+
   .duploflex div {
     max-width: 100%;
   }
+
   .fundo-only-big {
     display: none;
   }
+
   body {
     font-size: 95%;
-    margin: 2ch calc(15% - 50px); 
+    margin: 2ch calc(15% - 50px);
   }
 }
-@media only screen and (max-width: 500px){
+
+@media only screen and (max-width: 500px) {
   :root {
-  background-color: var(--backgroundColor);
+    background-color: var(--backgroundColor);
   }
 
   body {
     font-size: 90%;
-    margin: 1ch 0px; 
+    margin: 1ch 0px;
   }
-  article, nav.barra {
+
+  article,
+  nav.barra {
     border: none;
   }
 }
