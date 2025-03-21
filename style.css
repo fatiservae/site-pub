@@ -78,7 +78,7 @@ body {
   */
   margin-top: 2ch;
   align-items: center;
-  margin: 2ch calc(25% - 130px);
+  margin: 2ch calc(20% - 130px);
   /* quero ver mais elegante */
 }
 
@@ -90,6 +90,7 @@ strong {
 }
 
 article {
+  margin-top: 4ch;
   text-align: start;
   padding: 1rem;
 }
@@ -202,6 +203,7 @@ li {
 #eu img {
   border-radius: 100%;
   max-height: 30vh;
+  border: 2px solid #aaa;
 }
 
 #autor {
@@ -259,9 +261,8 @@ span#frase {
   text-shadow: 8px 6px 10px var(--sombra);
   filter: blur(5px);
   */
-  font-size: 95%;
+  /* font-family: 'Fira Mono'; */
   font-style: italic;
-  align: center;
   text-align: center;
   color: var(--corFonte);
   padding-left: auto;
@@ -304,9 +305,6 @@ nav.barra {
   width: 100vw;
   z-index: +100;
   */
-}
-
-nav.barra {
   height: fit-content;
   padding: 0px;
 }
@@ -343,7 +341,7 @@ nav.barra img {
   border: 1px solid var(--borderColor);
   background: var(--vidro);
   border-radius: var(--borderRadius);
-  padding: 5px;
+  padding: 2px;
   /* background: var(--headingsColor); */
 }
 
@@ -492,6 +490,14 @@ input::placeholder {
 
 #tag_medicina::before {
   content: "🩺💉 ";
+}
+
+#tag_finanças::before {
+  content: "📊$ ";
+}
+
+#tag_economia::before {
+  content: "💰💵 ";
 }
 
 #tag_dor::before {
@@ -1199,6 +1205,10 @@ td {
   border-right: var(--stdBorder);
 }
 
+#TableOfContents {
+  margin-bottom: 20ch;
+}
+
 #TableOfContents li::marker {
   content: none;
 }
@@ -1277,30 +1287,37 @@ h3,
 h4,
 h5,
 h6 {
+  font-weight: 600;
   padding: 0px;
   margin: 1.5ch;
   margin-left: 0px;
+  margin-top: 3rem;
   font-weight: bold;
   color: var(--headingsColor);
 }
 
 h1,
 h2 {
-  font-size: 110%;
+  font-size: 150%;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  font-size: 100%;
+  font-size: 120%;
   font-weight: 400;
 }
 
 h4,
 h5,
 h6 {
+  font-size: 110%;
   font-weight: 300;
+}
+
+h2::before {
+  content: "\00a0 # "
 }
 
 h3::before,
@@ -1398,6 +1415,10 @@ div#artigos #artigo {
 
 div#artigos #artigo img {
   max-height: 150px;
+}
+
+#artigo {
+  text-align: center;
 }
 
 div#artigos #artigo p,

@@ -10,6 +10,23 @@
 	
 	
 	<item>
+		<title>Meus projetos</title>
+		<link>https://www.jeffersontorres.com.br/projects/</link>
+		<pubDate>Fri, 21 Mar 2025 10:21:46 -0300</pubDate>
+		
+		<guid>https://www.jeffersontorres.com.br/projects/</guid>
+		<description>&lt;h2 id=&#34;aesclepius&#34;&gt;Aesclepius&lt;/h2&gt;
+&lt;p&gt;Minha plataforma online de suporte médico.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://aesclepius.com.br&#34;&gt;https://aesclepius.com.br&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;simulador-de-ventilador-mecânico-em-javascript&#34;&gt;Simulador de ventilador mecânico em JavaScript&lt;/h2&gt;
+&lt;p&gt;Uma tentativa de elaborar um simulador de ventilação mecânica webnativo.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://aesclepius.com.br/ventilador-mec/&#34;&gt;https://aesclepius.com.br/ventilador-mec&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;direto-e-medicina-legal&#34;&gt;Direto e medicina legal&lt;/h2&gt;
+&lt;p&gt;Encontre tópicos sobre direito &lt;a href=&#34;../tags/direito/&#34;&gt;aqui&lt;/a&gt; e sobre medicina legal &lt;a href=&#34;https://aesclepius.com.br/tags/medicina-legal/&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
+</description>
+	</item>
+	
+	<item>
 		<title>SxPres: minimalistic presentations</title>
 		<link>https://www.jeffersontorres.com.br/sxpres/</link>
 		<pubDate>Sat, 22 Feb 2025 12:38:39 -0300</pubDate>
@@ -1022,17 +1039,47 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 		
 		<guid>https://www.jeffersontorres.com.br/vieses/</guid>
 		<description>&lt;p&gt;Uma visão detalhada e exemplificativa de todas falhas lógico-cognitivas da &lt;em&gt;psique&lt;/em&gt; humana.&lt;/p&gt;
-&lt;p&gt;&lt;img src=../pix/vieses.ia.webp&gt;&lt;/img&gt;&lt;/p&gt;
+
+
+
+  &lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../pix/vieses.ia.webp&#34;&gt;
+      &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
 &lt;h2 id=&#34;introdução-ao-códex&#34;&gt;Introdução ao códex&lt;/h2&gt;
+&lt;p&gt;Este códex agrupa os mais diversos viéses humanos em categorias adjetivas. Os humanos são seres de uma espécie que evoluiu a contragosto do principal mecanismo adaptativo, que é a eliminação de características fracas para o ambiente e reforço das fortes. Somos movidos por generalizações de características, formas abstratas de agir, estratagemas gerais e heurísticas complexas adaptáveis a diversas situações e, por isso, os homens conquistaram o planeta.&lt;/p&gt;
 &lt;!-- [Clique aqui](/pix/codex-vieses.jpg) para visualizar a imagem grande dos vieses. --&gt;
 &lt;h2 id=&#34;humanos-se-orientam-mal&#34;&gt;Humanos se orientam mal&lt;/h2&gt;
+
+
+
+  &lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../pix/dali-confused.webp&#34;&gt;
+      &lt;figcaption&gt;ChatGPT 4.0 - Um humano confuso ao estilo Salvador Dali.&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
 &lt;h3 id=&#34;o-problema-xy&#34;&gt;O problema XY&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Buscar soluções para problemas sintomáticos não resolve causa basal&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;O usuário de um serviço qualquer encontra uma dificuldade por ter o serviço X prestado de forma incorreta, levando ao surgimento do sintoma Y. Quando entra em contato com suporte técnico, solicita orientações para corrigir Y e nunca consegue se livrar do problema original X.&lt;/p&gt;
 &lt;h2 id=&#34;a-memória-humana-não-é-confiável&#34;&gt;A memória humana não é confiável&lt;/h2&gt;
+
+
+
+  &lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../pix/memory.webp&#34;&gt;
+      &lt;figcaption&gt;ChatGPT 4.0 - Homem ao estilo realista tentando se lembrar de algo.&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
 &lt;h3 id=&#34;efeito-de-espaçamento&#34;&gt;Efeito de espaçamento&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;sugestividade&#34;&gt;Sugestividade&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;falsa-lembrança&#34;&gt;Falsa lembrança&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;criptomnésia&#34;&gt;Criptomnésia&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Por esquecimento, uma ideia velha parece nova.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;jamais-vu&#34;&gt;Jamais vu&lt;/h3&gt;
@@ -1040,16 +1087,29 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 &lt;h3 id=&#34;déjà-vu&#34;&gt;Déjà vu&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Algo desconhecido parece familiar.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;confusão-sobre-a-fonte&#34;&gt;Confusão sobre a fonte&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;erro-de-atribuição-de-origem&#34;&gt;Erro de atribuição de origem&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-gell-mann&#34;&gt;Efeito Gell-Mann&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Excessiva confiança em fontes sabidamente comprometidas&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Veja meu artigo &lt;a href=&#34;../filosofia/gell-man/&#34;&gt;sobre o efeito Gell-Mann&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;a-racionalidade-humana-prefere-a-simplicidade-e-completude&#34;&gt;A racionalidade humana prefere a simplicidade e completude&lt;/h2&gt;
+
+
+
+  &lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../pix/complex-simple.png&#34;&gt;
+      &lt;figcaption&gt;Google Gemini 2.0 Flash - A scale with a simple and a complex watch comparison.&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
 &lt;h3 id=&#34;efeito-menos-é-melhor&#34;&gt;Efeito menos é melhor&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;navalha-de-ockam&#34;&gt;Navalha de Ockam&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;A explicação mais simples é provavelmente a mais correta.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Eu discordo deste viés, veja &lt;a href=&#34;../farsa-ockham/&#34;&gt;aqui&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;erro-de-conjunção&#34;&gt;Erro de conjunção&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-delmore&#34;&gt;Efeito Delmore&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;O cérebro humano superestima os objetivos imediatos e subestima os objetivos de longo prazo.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;O maratonista que busca como meta &lt;em&gt;&amp;ldquo;ser melhor ano que vem&amp;rdquo;&lt;/em&gt; tem desempenho pior que aquele que se compromete a melhorar o tempo da corrida em X segundos a cada treino.&lt;/p&gt;
@@ -1059,43 +1119,61 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 &lt;h3 id=&#34;efeito-abrigo-de-bicicleta-lei-da-trivialidade&#34;&gt;Efeito abrigo de bicicleta (lei da trivialidade)&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;A futilidade é mais debatível que a sofisticação.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Para construção de um reator nuclear poucos podem opinar e, portanto, a deliberação se torna objetiva. Para a construção de um abrigo de bicicletas qualquer um pode opinar e, por consequência, as discussões serão intermináveis.&lt;/p&gt;
-&lt;h3 id=&#34;efeito-_rima-portanto-é-bom_&#34;&gt;Efeito &lt;em&gt;rima portanto é bom&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;efeito-rima-portanto-é-bom&#34;&gt;Efeito &lt;em&gt;rima portanto é bom&lt;/em&gt;&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-de-crença&#34;&gt;Viés de crença&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;víes-de-informação&#34;&gt;Víes de informação&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-de-ambiguidade&#34;&gt;Viés de ambiguidade&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-de-confusão-das-variáveis&#34;&gt;Viés de confusão das variáveis&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Duas variáveis no mesmo contexto têm sua relação interpretada de forma errada.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Durante o verão, o consumo de sorvetes e uso de piscinas aumentam por causa do calor. O observador desavisado tende a criar uma relação errada entre estas variáveis, afirmando que o consumo de sorvete aumenta os afogamentos, por exemplo.&lt;/p&gt;
 &lt;h2 id=&#34;a-psique-humana-tende-a-preservar-o-status-atual&#34;&gt;A psique humana tende a preservar o status atual&lt;/h2&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-do-status-quo&#34;&gt;Viés do status quo&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-de-comparação-social&#34;&gt;Viés de comparação social&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-de-domínio&#34;&gt;Efeito de domínio&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;reatância-psicológica&#34;&gt;Reatância psicológica&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Quando percebemos a persuasão, tendemos a reafirmar nossa opinião ou radicalizar para evitar nos sentirmos coagidos.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Quando um cliente percebe estar sendo persuadido na compra de um produto, tende a rejeitá-lo ou comprar o concorrente, apenas para manter a sensação de liberdade.&lt;/p&gt;
 &lt;h3 id=&#34;psicologia-reversa&#34;&gt;Psicologia reversa&lt;/h3&gt;
 &lt;h3 id=&#34;justificação-do-sistema&#34;&gt;Justificação do sistema&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-tetris&#34;&gt;Efeito tetris&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;A mente humana pode adotar um paradigma como padrão, tornando a visão do mundo real distorcida no sentido de um viés padrão.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Um jogador de tetris de longa data tende a enxergar coisas do mundo real como peças de tetris que se encaixam.&lt;/p&gt;
 &lt;h2 id=&#34;a-ação-humana-é-direcionada-a-tarefas-já-consolidadas&#34;&gt;A ação humana é direcionada a tarefas já consolidadas&lt;/h2&gt;
 &lt;h3 id=&#34;efeito-bumerangue&#34;&gt;Efeito bumerangue&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-de-doação&#34;&gt;Efeito de doação&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-tratamento-da-informação-difícil&#34;&gt;Efeito tratamento da informação difícil&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-de-pseudo-certeza&#34;&gt;Efeito de pseudo-certeza&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Tendemos a eliminar pequenos riscos do que reduzir grandes riscos pelo conforto da pseudo-certeza de termos controle.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Prefere-se o investimento no combate ao terrorismo, um evento raro, do que o mesmo valor ser alocado em educação básica, um item muito mais relevante.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-de-disposição&#34;&gt;Efeito de disposição&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-de-risco-zero&#34;&gt;Viés de risco zero&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Evitamos o risco a todo custo, muitas vezes perdendo oportunidades de longo prazo com riscos baixos ou moderados.&lt;/strong&gt;&lt;/p&gt;
 &lt;h3 id=&#34;viés-da-unidade&#34;&gt;Viés da unidade&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-ikea&#34;&gt;Efeito IKEA&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Valorizamos de forma desproporcional o resultado de nosso esforço.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;A loja sueca IKEA vendia móveis que os próprios consumidores montavam com preço superior aos já montados, se aproveitando do viés cognitivo dos clientes valorizarem seu próprio trabalho.&lt;/p&gt;
 &lt;h3 id=&#34;aversão-à-perda&#34;&gt;Aversão à perda&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;efeito-de-própria-geração&#34;&gt;Efeito de própria geração&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;escalada-de-compromisso&#34;&gt;Escalada de compromisso&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;escalada-irracional&#34;&gt;Escalada irracional&lt;/h3&gt;
+&lt;p&gt;Em breve.&lt;/p&gt;
 &lt;h3 id=&#34;viés-de-custo-irrecuperável&#34;&gt;Viés de custo irrecuperável&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;O investimento atual é grande o suficiente para nos mantermos no plano, mesmo que seja um péssimo plano&lt;/strong&gt;.&lt;/p&gt;
 &lt;p&gt;Víes mais conhecido como teoria do frânces &lt;em&gt;Jacque&lt;/em&gt;: &amp;ldquo;já que&amp;rdquo; já estou aqui, continuo! 😂&lt;/p&gt;
@@ -1106,7 +1184,7 @@ Se quer colaborar, me chame no Telegram: @fatiservae
 &lt;p&gt;Este viés humano parece fazer parte de uma estratégia de sobrevivência.&lt;/p&gt;
 &lt;h3 id=&#34;argumentum-ad-novitatem&#34;&gt;argumentum ad novitatem&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Toda novidade recebe indevidos créditos antecipados.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;A dieta mais recente provavelmente é mais eficaz, &lt;em&gt;apenas por ser mais nova&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Pensamos que a dieta mais recente provavelmente é mais eficaz, &lt;em&gt;apenas por ser mais nova&lt;/em&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;desconto-hiperbólico&#34;&gt;Desconto hiperbólico&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;Os benefícios imediatos tem maior peso que benefícios mediados e futuros.&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Quanto maior a espera de um benefício, menos valor este parece ter diante da expectativa humana. Na verdade, os mamíferos, de forma geral, montam estratégias de benefício limitadas no tempo. Por exemplo, leões, podem esperar por horas para uma emboscada contra uma presa, nunca por dias.&lt;/p&gt;
@@ -1319,7 +1397,12 @@ Amnésia vem do grego &lt;em&gt;mnesis&lt;/em&gt;, que signfica registo, memóri
 		<pubDate>Thu, 04 Jan 2024 06:27:45 -0300</pubDate>
 		
 		<guid>https://www.jeffersontorres.com.br/viagem/micronesia/pohnpei-micronesia/</guid>
-		<description>&lt;p&gt;&lt;img src=../pix/destinos/ruinas-nan-madol.jpg&gt; &lt;/img&gt;&lt;/p&gt;
+		<description>&lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../pix/destinos/ruinas-nan-madol.jpg&#34;&gt;
+      &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
 &lt;p&gt;Pohnpei é uma das ilhas da Micronésia, importante pelo seu valor arqueológico. As ruínas e sítios estão entre os menos explicados do planeta.&lt;/p&gt;
 &lt;h2 id=&#34;a-terra-do-mistério&#34;&gt;A terra do mistério&lt;/h2&gt;
 &lt;p&gt;A palavra &lt;em&gt;pohnpei&lt;/em&gt; significa terra surgida de orações e explica a origem mitológica das ilhas, que seriam fruto das orações dos antigos migrantes oriundos da China em uma canoa mágica.&lt;/p&gt;
@@ -1855,7 +1938,7 @@ Durante quatro anos de grauduação, um aluno de medicina chega a decorar entre 
 &lt;p&gt;Ainda mais: é possível que haja debate de validade e até de evidências sobre a mentira em curso 😂.&lt;/p&gt;
 &lt;p&gt;Este fenômeno tem a ver com a origem das maiorias das classificações médicas.&lt;/p&gt;
 &lt;p&gt;Normalmente, tenta-se compartimentalizar os fenômenos, na tentativa de delinear alguma abordagem sistematizada para cada patologia. Porém, esse fundamento lógico das classificações médicas se perdeu com o tempo, o que há, atualmente, é uma insistência inocente em tal estratégia.&lt;/p&gt;
-&lt;h2 id=&#34;_circus-medicus_&#34;&gt;&lt;em&gt;Circus Medicus&lt;/em&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;circus-medicus&#34;&gt;&lt;em&gt;Circus Medicus&lt;/em&gt;&lt;/h2&gt;
 
 
 
@@ -1887,7 +1970,7 @@ Durante quatro anos de grauduação, um aluno de medicina chega a decorar entre 
 &lt;h3 id=&#34;actore-non-probante-reus-absolvitur&#34;&gt;actore non probante reus absolvitur&lt;/h3&gt;
 &lt;p&gt;Questionando meus professores ao longo da formação médica, notei que não há dolo neste ponto fraco da medicina. Na verdade, somos impelidos pela tradição no uso dos termos equivocados ou pessimamente definidos. Me lembra muito o efeito jornalístico na física, e.g. na nomeclatura da singularidade como Big-Bang, um termo jornalístico irônico que acabou por se tornar o nome oficial da cosmologia moderna para a primeira expansão do universo. Depois de um tempo, a cultura e a tradição já investiram tanto sobre o termo que este é &lt;em&gt;adquirido&lt;/em&gt; oficialmente ao &lt;em&gt;corpus&lt;/em&gt;, se tornando parte daquele campo científico.&lt;/p&gt;
 &lt;p&gt;Perdoável, mas cômico, pelo menos.&lt;/p&gt;
-&lt;h2 id=&#34;a-grande-festa-publicações-_científicas_-em-medicina&#34;&gt;A grande festa: publicações &lt;em&gt;&amp;ldquo;científicas&amp;rdquo;&lt;/em&gt; em medicina&lt;/h2&gt;
+&lt;h2 id=&#34;a-grande-festa-publicações--em-medicina&#34;&gt;A grande festa: publicações &lt;em&gt;&amp;ldquo;científicas&amp;rdquo;&lt;/em&gt; em medicina&lt;/h2&gt;
 &lt;p&gt;Em breve.&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;referências&#34;&gt;Referências&lt;/h2&gt;
@@ -1979,7 +2062,15 @@ Seu melhor vídeo é sobre Alan Turing, pelo simples motivo de expor a informaç
 		
 		<guid>https://www.jeffersontorres.com.br/receitas/cervejas/</guid>
 		<description>&lt;p&gt;Um guia pessoal e opinativo sobre a mais antiga bebida criada pelo homem.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;../pix/culinaria/cervejas/copo-medina.jpg&#34;&gt;&lt;/img&gt;&lt;/p&gt;
+
+
+
+  &lt;div id=&#34;img-div&#34;&gt;
+    &lt;img src=&#34;../pix/culinaria/cervejas/copo-medina.png&#34;&gt;
+      &lt;figcaption&gt;&lt;/figcaption&gt;
+    &lt;/img&gt;
+  &lt;/div&gt;
+
 &lt;h2 id=&#34;-avisos&#34;&gt;🔞 Avisos!&lt;/h2&gt;
 &lt;p&gt;Esta página faz recomendações de bebidas alcoólicas, direcionadas para maiores de 18 anos de idade.&lt;/p&gt;
 &lt;p&gt;Todas cervejas desta páginas são recomendações minhas. Costumo degustá-las com carnes ou massas e salgados.&lt;/p&gt;
