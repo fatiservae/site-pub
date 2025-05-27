@@ -1025,7 +1025,7 @@ input::placeholder {
 }
 
 img {
-  max-height: 40vw;
+  max-height: 25vw;
   border-radius: 4px;
   max-width: 95%;
 }
@@ -1439,7 +1439,7 @@ div#artigos-lista-simples {
 /* Mediaqueries */
 @media only screen and (max-width: 800px) {
   img {
-    max-height: 80vw;
+    max-height: 60vw;
   }
 
   div#artigos {
