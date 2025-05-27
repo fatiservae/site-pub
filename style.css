@@ -218,9 +218,9 @@ li {
 #autor,
 #frase {
   /*
-  */
   max-width: 60vw;
   width: fit-content;
+  */
   text-align: center;
 }
 
