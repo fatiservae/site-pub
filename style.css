@@ -1317,7 +1317,7 @@ h6 {
 }
 
 h2::before {
-  content: "\00a0 # "
+  content: "\00a0 — "
 }
 
 h3::before,
