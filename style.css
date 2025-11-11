@@ -3,9 +3,11 @@
 }
 
 :root {
-  background-image: radial-gradient(gray 1px, transparent 0);
-  background-size: 40px 40px;
+  background-image: radial-gradient(darkgray 1px, transparent 0);
+  background-size: 18px 18px;
   background-position: -15px -15px;
+  /* background-position: fixed; */
+  background-attachment: fixed;
   /*
   */
   --stdTransition: background-color 0.2s ease;
@@ -21,12 +23,7 @@
   font-weight: 400;
   font-size: 1rem;
   background-color: var(--backgroundColor);
-  --gradiente: radial-gradient(ellipse at 50% 50%,
-      #bf398910 0,
-      transparent 75%),
-    radial-gradient(ellipse at 50% 50%,
-      #bf398910 0,
-      transparent 75%);
+  --gradiente: radial-gradient(ellipse at 50% 50%, #bf398910 0, transparent 75%), radial-gradient(ellipse at 50% 50%, #bf398910 0, transparent 75%);
   --dimmedFontColor: #777;
   --hoverBackground: #282828;
   --headingsColor: #252563;
@@ -98,6 +95,8 @@ article {
   border-radius: var(--borderRadius);
   background-color: rgb(10, 10, 10, .4);
   background: #ccc;
+  background-image: linear-gradient(ellipse at 50% 50%, #bf398910 0, transparent 75%);
+  background: linear-gradient(#ccc, rgb(204, 204, 204, .6));
   margin-top: 4ch;
   text-align: start;
   padding: 2rem;
@@ -185,6 +184,10 @@ li {
 ul::marker,
 li::marker {
   content: " — "
+}
+
+.footnotes ol li::marker {
+  content: initial;
 }
 
 #artlist li {
@@ -1204,7 +1207,10 @@ table>tfoot:not(:last-child) {
   border-bottom: var(--stdBorder);
 }
 
-tbody tr {}
+table>thead>tr strong,
+table>thead>tr {
+  color: lightgray;
+}
 
 tr td {
   border-bottom: var(--stdBorder);
@@ -1260,12 +1266,12 @@ pre {
 }
 
 code {
-  color: gold;
+  color: black;
   font-size: 95%;
   white-space: break-spaces;
   font-family: 'mono';
   font-style: normal;
-  background: #202020;
+  /* background: #202020; */
   border-radius: var(--borderRadius);
   max-width: 80vw;
 }
@@ -1428,7 +1434,7 @@ div#artigos #artigo {
   width: fit-content;
   height: fit-content;
   margin: 1ch;
-  background: #bbb;
+  background: #aaa;
   border: 1px solid var(--borderColor);
   padding: 1rem;
   border-radius: var(--borderRadius);
@@ -1437,6 +1443,7 @@ div#artigos #artigo {
 div#artigos #artigo:hover,
 div#artigos #artigo:active {
   border: 4px solid springgreen;
+  background: #eee;
 }
 
 div#artigos #artigo img {
@@ -1460,6 +1467,13 @@ div#artigos #artigo h5 {
 
 div#artigos-lista-simples {
   text-align: center;
+}
+
+details {
+  border-radius: var(--borderRadius);
+  background-color: var(--vidro);
+  width: 40vw;
+  padding: 0.5ch;
 }
 
 /* Mediaqueries */
@@ -1509,5 +1523,20 @@ div#artigos-lista-simples {
   article,
   nav.barra {
     border: none;
+  }
+}
+
+
+@media print {
+  article {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  nav.barra {
+    display: none
+  }
+  h1, h2, h3, h4 {
+   page-break-after: avoid;
+   padding-top: 10px;
   }
 }

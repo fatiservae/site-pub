@@ -1,12 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
 	<title>Jefferson T.</title>
-	<link>https://www.jeffersontorres.com.br/categories/</link>
-	<description>Recent content in categories on Jefferson T.</description>
+	<link>https://www.jeffersontorres.com.br/medicina-legal/</link>
+	<description>Recent content in medicina-legals on Jefferson T.</description>
 	<generator>Hugo -- gohugo.io</generator>
 	<language>en-us</language>
+	<lastBuildDate>Mon, 28 Jul 2025 09:57:15 -0300</lastBuildDate>
     
-        <atom:link href="https://www.jeffersontorres.com.br/categories/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://www.jeffersontorres.com.br/medicina-legal/index.xml" rel="self" type="application/rss+xml" />
 	
 	
 	<item>
