@@ -348,7 +348,7 @@ nav.barra a:hover {
   /*
   background-color: var(--hoverBackground);
   */
-  color: var(--fontColor);
+  color: darkred;
   /* Para evitar ser sobreposto por a{}*/
   text-decoration: none;
 }
